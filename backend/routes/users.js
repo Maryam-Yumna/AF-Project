@@ -1,6 +1,7 @@
 const router = require("express").Router();
 const { request } = require("express");
 let User = require('../models/User');
+const jwt = require('jsonwebtoken');
 
 //http://localhost:8070/user/register
 //register a new user
@@ -21,8 +22,18 @@ router.route('/register').post((req, res)=> {
     newUser.email = email;
     newUser.phone = phone;
 
-    newUser.save().then(()=> {
-            res.json("User Registered")
+    newUser.save().then((user)=> {
+            // res.json("User Registered")
+            jwt.sign(
+                {id: user._id, userType: user.userType}, 'jwtSecret', {expiresIn: '1d'},
+                (err, token)=>{
+                    if(err) throw err;
+                    res.json({
+                        user,
+                        token
+                    });
+                }
+            )
         }).catch((err)=>{
             console.log(err)
     })
