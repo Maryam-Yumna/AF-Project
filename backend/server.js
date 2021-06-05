@@ -58,6 +58,10 @@ app.use('/payment', paymentRouter);
 
 const authRouter = require('./routes/auth.js'); 
 app.use('/auth', authRouter);
+
+const paperUploadRouter = require('./routes/paperUploads.js');
+app.use('/paperUpload', paperUploadRouter);
+
 const path = require("path");
 app.use('/uploads/files',express.static(path.join(__dirname, "uploads/files/")));
 app.use('/uploads/images',express.static(path.join(__dirname, "uploads/images/")));
