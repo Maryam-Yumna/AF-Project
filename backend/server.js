@@ -5,6 +5,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 const app = express();
 require("dotenv").config();
+var fs = require('fs');
 
 const PORT = process.env.PORT || 8070;
 
@@ -26,8 +27,40 @@ connection.once("open", () => {
 });
 
 // http://localhost:8070/user
-const userRouter = require('./routes/users.js');
+const userRouter = require('./routes/users.js'); 
 app.use('/user', userRouter);
+
+// http://localhost:8070/conference
+const conferenceRouter = require('./routes/conferences.js');
+app.use('/conference', conferenceRouter);
+
+// http://localhost:8070/workshop
+const workshopRouter = require('./routes/workshops.js');
+app.use('/workshop', workshopRouter);
+
+const keynoteSpeakerRouter = require('./routes/keynoteSpeakers.js');
+app.use('/keynoteSpeaker', keynoteSpeakerRouter);
+
+const workshopUploadRouter = require('./routes/workshopUploads.js');
+app.use('/workshopUpload', workshopUploadRouter);
+
+const keynoteSpeakerTempRouter = require('./routes/keynoteSpeakersTemp.js');
+app.use('/keynoteSpeakerTemp', keynoteSpeakerTempRouter);
+
+const conferenceTempRouter = require('./routes/conferenceTemp.js');
+app.use('/conferenceTemp', conferenceTempRouter);
+
+const workshopTempRouter = require('./routes/workshopTemp.js');
+app.use('/workshopTemp', workshopTempRouter);
+
+const paymentRouter = require('./routes/payments.js');
+app.use('/payment', paymentRouter);
+
+const authRouter = require('./routes/auth.js'); 
+app.use('/auth', authRouter);
+const path = require("path");
+app.use('/uploads/files',express.static(path.join(__dirname, "uploads/files/")));
+app.use('/uploads/images',express.static(path.join(__dirname, "uploads/images/")));
 
 app.listen(PORT, () => {
     console.log(`server is up and running in port ${PORT}`);
