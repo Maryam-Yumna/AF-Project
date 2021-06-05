@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Header from './components/Header';
+import NavBar from './components/NavBar';
 import Home from './components/Home';
+// import uploadfiles from './components/uploadfiles';
 
 class App extends Component {
     render() {
         return (
             <Router>
-                <Header/>
+                <NavBar/>
+                {/* <uploadfiles/> */}
                 <Switch>
-                <Route path="/home" exact component={Home}/>
+                <Route path="/" exact component={Home}/>
                 </Switch>
             </Router>
             );

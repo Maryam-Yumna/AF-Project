@@ -21845,37 +21845,38 @@ parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-var _header = require("./components/Header");
-var _headerDefault = parcelHelpers.interopDefault(_header);
+var _navBar = require("./components/NavBar");
+var _navBarDefault = parcelHelpers.interopDefault(_navBar);
 var _home = require("./components/Home");
 var _homeDefault = parcelHelpers.interopDefault(_home);
+// import uploadfiles from './components/uploadfiles';
 class App extends _react.Component {
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 9
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_headerDefault.default, {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
                 lineNumber: 10
             },
             __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_navBarDefault.default, {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
                 lineNumber: 11
             },
             __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
+                lineNumber: 13
+            },
+            __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-            path: "/home",
+            path: "/",
             exact: true,
             component: _homeDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 12
+                lineNumber: 14
             },
             __self: this
         }))));
@@ -21888,7 +21889,7 @@ exports.default = App;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/Header":"4DQ7n","./components/Home":"1Baw2","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/Home":"1Baw2","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/NavBar":"5vDPx"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -24967,7 +24968,7 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 }
 module.exports = hoistNonReactStatics;
 
-},{"react-is":"68QIU"}],"4DQ7n":[function(require,module,exports) {
+},{"react-is":"68QIU"}],"1Baw2":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -24978,31 +24979,45 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-class Header extends _react.Component {
+// import Background from 'url:../public/images/BackgroundHomeImage.png';
+var _background2Png = require("url:../public/images/background2.png");
+var _background2PngDefault = parcelHelpers.interopDefault(_background2Png);
+class Home extends _react.Component {
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Header.jsx",
-                lineNumber: 6
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 8
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "backgroundImage",
             __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Header.jsx",
-                lineNumber: 7
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 9
             },
             __self: this
-        }, "Header")));
+        }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            src: _background2PngDefault.default,
+            style: {
+                width: '100%'
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 10
+            },
+            __self: this
+        }))));
     }
 }
-exports.default = Header;
+exports.default = Home;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"367CR":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","url:../public/images/background2.png":"7HxCf"}],"367CR":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -25154,7 +25169,38 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"592mh"}],"1Baw2":[function(require,module,exports) {
+},{"react-refresh/runtime":"592mh"}],"7HxCf":[function(require,module,exports) {
+module.exports = require('./bundle-url').getBundleURL() + "background2.7338f5a0.png";
+
+},{"./bundle-url":"3seVR"}],"3seVR":[function(require,module,exports) {
+"use strict";
+/* globals document:readonly */ var bundleURL = null;
+function getBundleURLCached() {
+    if (!bundleURL) bundleURL = getBundleURL();
+    return bundleURL;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ('' + err.stack).match(/(https?|file|ftp):\/\/[^)\n]+/g);
+        if (matches) return getBaseURL(matches[0]);
+    }
+    return '/';
+}
+function getBaseURL(url) {
+    return ('' + url).replace(/^((?:https?|file|ftp):\/\/.+)\/[^/]+$/, '$1') + '/';
+} // TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    let matches = ('' + url).match(/(https?|file|ftp):\/\/[^/]+/);
+    if (!matches) throw new Error('Origin not found');
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"5vDPx":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25165,30 +25211,195 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-class Home extends _react.Component {
+var _reactRouterDom = require("react-router-dom");
+class NavBar extends _react.Component {
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
-                lineNumber: 6
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 7
             },
             __self: this
-        }, "Home")));
+        }, /*#__PURE__*/ _reactDefault.default.createElement("nav", {
+            class: "navbar navbar-expand-lg navbar-dark bg-dark",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 8
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "container-fluid",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 9
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            class: "navbar-brand",
+            to: "/",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 10
+            },
+            __self: this
+        }, "ICAF"), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            class: "navbar-toggler",
+            type: "button",
+            "data-bs-toggle": "collapse",
+            "data-bs-target": "#navbarText",
+            "aria-controls": "navbarText",
+            "aria-expanded": "false",
+            "aria-label": "Toggle navigation",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 11
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+            class: "navbar-toggler-icon",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 12
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "collapse navbar-collapse",
+            id: "navbarText",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 14
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            class: "navbar-nav me-auto mb-2 mb-lg-0",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 15
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 16
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            class: "nav-link",
+            ariaCurrent: "page",
+            to: "/",
+            activeClassName: "active",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 17
+            },
+            __self: this
+        }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 19
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            class: "nav-link",
+            to: "/",
+            activeClassName: "active",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 20
+            },
+            __self: this
+        }, "Downloads")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 22
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            class: "nav-link",
+            to: "/",
+            activeClassName: "active",
+            activeClassName: "active",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 23
+            },
+            __self: this
+        }, "Researchers")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 25
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            class: "nav-link",
+            to: "/",
+            activeClassName: "active",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 26
+            },
+            __self: this
+        }, "WorkShops"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "d-flex",
+            id: "navbarText2",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 29
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("ul", {
+            class: "navbar-nav me-auto mb-2 mb-lg-0",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 30
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 31
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            class: "nav-link",
+            to: "/",
+            activeClassName: "active",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 32
+            },
+            __self: this
+        }, "Login")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+            class: "nav-item",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 34
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            class: "nav-link",
+            to: "/",
+            activeClassName: "active",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
+                lineNumber: 35
+            },
+            __self: this
+        }, "Register")))))))));
     }
 }
-exports.default = Home;
+exports.default = NavBar;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","1GBDS","53dE8"], "53dE8", "parcelRequire0de8")
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}]},["1j6wU","1GBDS","53dE8"], "53dE8", "parcelRequire0de8")
 
 //# sourceMappingURL=index.8792c6b3.js.map
