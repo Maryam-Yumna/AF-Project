@@ -9,6 +9,7 @@ router.route('/newWorkshopUpload').post(upload.single('file'),async(req, res)=> 
         const file = new WorkshopUpload({
             conference: req.body.conference,
             user: req.body.user,
+            title: req.body.title,
             fileName : req.file.originalname,
             filePath : req.file.path,
             fileType : req.file.mimetype,
@@ -22,6 +23,34 @@ router.route('/newWorkshopUpload').post(upload.single('file'),async(req, res)=> 
     }
     
     
+})
+router.route('/').get((req, res)=>{
+    WorkshopUpload.find().populate('user').then((uploads)=>{
+        res.json(uploads)
+    }).catch((err)=>{
+        console.log(err)
+    })
+})
+
+router.route('/pending').get((req, res)=>{
+    WorkshopUpload.find({approval: 'pending'}).populate('user').then((uploads)=>{
+        res.json(uploads)
+    }).catch((err)=>{
+        console.log(err)
+    })
+})
+
+router.route('/updateApproval').put((req, res)=>{
+
+
+    WorkshopUpload.findOneAndUpdate({_id: req.body.id}, {approval: req.body.approval})
+    .then((workshop)=>{
+        res.json({message:"approval updated"});
+    })
+    .catch((err)=>{
+        console.error(err);
+    })
+   
 })
 const fileSizeFormatter = (bytes, decimal) =>{
     if(bytes === 0 ){

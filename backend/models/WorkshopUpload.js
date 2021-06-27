@@ -7,6 +7,9 @@ const workshopUploadSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "Conference",
     },
+    title:{
+        type: String
+    },
     fileName:
     {
         type: String,
