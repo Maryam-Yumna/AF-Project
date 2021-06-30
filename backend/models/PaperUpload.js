@@ -2,11 +2,6 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 const paperUploadSchema = new Schema({
-
-    conference: {
-        type: Schema.Types.ObjectId,
-        ref: "Conference",
-    },
     fileName:
     {
         type: String,
@@ -25,7 +20,9 @@ const paperUploadSchema = new Schema({
     },
     user: {
         type: Schema.Types.ObjectId,
-        ref: "User"
+        ref: "User",
+        required: true
+
     },
     approval: {
         type: String,

@@ -27,21 +27,24 @@ router.route('/login').post((req, res)=> {
                 if(err) throw err;
                 res.json({
                     user,
-                    token
+                    token,
+                    message: "success"
                 });
             }
         )
         
     })
     .catch((err)=>{
-            console.log(err)
-    })
-    
+            console.log(err);
+    })  
 })
 
 router.route('/user').get(auth, (req, res)=>{
     User.findById(req.user.id)
     .select('-password')
     .then(user => res.json(user))
+    .catch((err)=>{
+        console.log(err)
+})
 })
 module.exports = router;

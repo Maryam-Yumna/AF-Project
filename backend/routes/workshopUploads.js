@@ -1,14 +1,14 @@
 const router = require("express").Router();
 const { upload } = require("../middleware/filehelper");
 const WorkshopUpload = require("../models/WorkshopUpload");
+const auth = require('../middleware/auth');
 
-router.route('/newWorkshopUpload').post(upload.single('file'),async(req, res)=> {
+router.route('/newWorkshopUpload').post(upload.single('file'), auth, async(req, res)=> {
 
     try{
         // const file = req.file;
         const file = new WorkshopUpload({
-            conference: req.body.conference,
-            user: req.body.user,
+            user:  req.user.id,
             title: req.body.title,
             fileName : req.file.originalname,
             filePath : req.file.path,
@@ -32,16 +32,26 @@ router.route('/').get((req, res)=>{
     })
 })
 
-router.route('/pending').get((req, res)=>{
-    WorkshopUpload.find({approval: 'pending'}).populate('user').then((uploads)=>{
+router.route('/:status').get((req, res)=>{
+    const status = req.params.status;
+    WorkshopUpload.find({approval: status}).populate('user').then((uploads)=>{
         res.json(uploads)
     }).catch((err)=>{
         console.log(err)
     })
 })
 
-router.route('/updateApproval').put((req, res)=>{
+router.route('/user/workshop').get(auth, (req, res)=>{
+    const uid = req.user.id;
+    WorkshopUpload.findOne({user : uid}).populate('user').then((uploads)=>{
+        res.json(uploads)
+    }).catch((err)=>{
+        console.log(err)
+    })
+   
+})
 
+router.route('/updateApproval').put((req, res)=>{
 
     WorkshopUpload.findOneAndUpdate({_id: req.body.id}, {approval: req.body.approval})
     .then((workshop)=>{

@@ -1,14 +1,15 @@
 const router = require("express").Router();
 const { upload } = require("../middleware/filehelper");
 const PaperUpload = require("../models/PaperUpload");
+const auth = require('../middleware/auth');
 
-router.route('/newPaperUpload').post(upload.single('file'),async(req, res)=> {
+router.route('/newPaperUpload').post(upload.single('file'),auth, async(req, res)=> {
 
     try{
         // const file = req.file;
         const file = new PaperUpload({
             conference: req.body.conference,
-            user: req.body.user,
+            user:  req.user.id,
             fileName : req.file.originalname,
             filePath : req.file.path,
             fileType : req.file.mimetype,
@@ -23,6 +24,36 @@ router.route('/newPaperUpload').post(upload.single('file'),async(req, res)=> {
     }
     
     
+})
+
+router.route('/user/paper').get(auth, (req, res)=>{
+    const uid = req.user.id;
+    PaperUpload.findOne({user : uid}).populate('user').then((uploads)=>{
+        res.json(uploads)
+    }).catch((err)=>{
+        console.log(err)
+    })
+   
+})
+
+router.route('/:status').get((req, res)=>{
+    const status = req.params.status;
+    PaperUpload.find({approval: status}).populate('user').then((uploads)=>{
+        res.json(uploads)
+    }).catch((err)=>{
+        console.log(err)
+    })
+})
+router.route('/updateApproval').put((req, res)=>{
+
+    PaperUpload.findOneAndUpdate({_id: req.body.id}, {approval: req.body.approval})
+    .then((paper)=>{
+        res.json({message:"approval updated"});
+    })
+    .catch((err)=>{
+        console.error(err);
+    })
+   
 })
 const fileSizeFormatter = (bytes, decimal) =>{
     if(bytes === 0 ){

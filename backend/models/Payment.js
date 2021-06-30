@@ -3,21 +3,42 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const paymentSchema = new Schema({
     user:{
-        type: Schema.Types.ObjectId, ref: 'User',
-        require: true 
+        type: Schema.Types.ObjectId, 
+        ref: 'User',
+        required: true,
+        unique: true
     },
     amount: {
         type: Number,
-        require: true 
+        required: true
     },
-    
+    firstName: {
+        type: String,
+        required: true 
+    },
+    lastName: {
+        type: String,
+        required: true 
+    },
+    cardNumber: {
+        type: String,
+        required: true 
+    },
+    cvc: {
+        type: Number,
+        required: true
+    },
+    cardExpDate:{
+        type: Date,
+        required: true
+    },
     paymentDate:{
         type: Date,
         default: Date.now(),
     },
     paymentType: {
         type: String,
-        require: true 
+        required: true 
     },
 });
 

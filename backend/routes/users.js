@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { request } = require("express");
 let User = require('../models/User');
 const jwt = require('jsonwebtoken');
+const auth = require('../middleware/auth');
 
 //http://localhost:8070/user/register
 //register a new user
