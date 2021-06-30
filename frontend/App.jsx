@@ -14,6 +14,11 @@ import Resercher from './components/User/Resercher';
 import Attendee from './components/User/Attendee';
 import Papers from './components/Reviewer/Papers';
 // import uploadfiles from './components/uploadfiles';
+import AddKeynoteTemp from "./components/KeynoteSpeakers/AddKeynoteTemp";
+import ViewTempKeynotes from "./components/KeynoteSpeakers/ViewTempKeynotes";
+import AddKeynote from "./components/KeynoteSpeakers/AddKeynote";
+//import TemplateDownload from "./components/TemplateDownload";
+import KeynoteSpeakers from "./components/KeynoteSpeakers/KeynoteSpeakers";
 
 class App extends Component {
     render() {
@@ -30,7 +35,21 @@ class App extends Component {
                     <Route path="/workshopPresenter" exact component={WorkshopPresenter}/>
                     <Route path="/resercher" exact component={Resercher}/>
                     <Route path="/attendee" exact component={Attendee}/>
-                    
+                    <Route path = "/addKeynoteTemp">
+                        <AddKeynoteTemp/>
+                    </Route>
+                    <Route path = "/viewTempKeynotes">
+                        <ViewTempKeynotes/>
+                    </Route>
+                    <Route path = "/addAccepted">
+                        <AddKeynote/>
+                    </Route>
+                    <Route path = "/templateDownload">
+                        <TemplateDownload/>
+                    </Route>
+                    <Route path = "/keynoteSpeakers">
+                        <KeynoteSpeakers/>
+                    </Route>
                     <Route path="/login" exact component={Login}/>
                     
                 </Switch>

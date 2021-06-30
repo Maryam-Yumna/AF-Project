@@ -1,4 +1,4 @@
-const router = require("express").Router();
+/*const router = require("express").Router();
 const { request } = require("express");
 const KeynoteSpeakerTemp = require("../models/KeynoteSpeakerTemp");
 
@@ -37,3 +37,5 @@ router.route('/').get((req, res)=>{
 
 
 module.exports = router;
+
+ */

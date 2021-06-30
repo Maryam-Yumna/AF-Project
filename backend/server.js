@@ -38,14 +38,16 @@ app.use('/conference', conferenceRouter);
 const workshopRouter = require('./routes/workshops.js');
 app.use('/workshop', workshopRouter);
 
-const keynoteSpeakerRouter = require('./routes/keynoteSpeakers.js');
+// http://localhost:8070/keynoteSpeakerTemp
+const keynoteSpeakerTempRouter = require('./routes/keynoteRouteTemp.js');
+app.use('/keynoteSpeakerTemp', keynoteSpeakerTempRouter);
+
+// http://localhost:8070/keynoteSpeaker
+const keynoteSpeakerRouter = require('./routes/keynoteRoute.js');
 app.use('/keynoteSpeaker', keynoteSpeakerRouter);
 
 const workshopUploadRouter = require('./routes/workshopUploads.js');
 app.use('/workshopUpload', workshopUploadRouter);
-
-const keynoteSpeakerTempRouter = require('./routes/keynoteSpeakersTemp.js');
-app.use('/keynoteSpeakerTemp', keynoteSpeakerTempRouter);
 
 const conferenceTempRouter = require('./routes/conferenceTemp.js');
 app.use('/conferenceTemp', conferenceTempRouter);
