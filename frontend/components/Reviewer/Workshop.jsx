@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import Unavailable from 'url:../../public/images/unavailable.png'
+
 
 class Workshop extends Component {
     constructor(){
