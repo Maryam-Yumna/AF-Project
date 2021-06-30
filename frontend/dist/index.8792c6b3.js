@@ -25458,8 +25458,6 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _unavailablePng = require("url:../../public/images/unavailable.png");
-var _unavailablePngDefault = parcelHelpers.interopDefault(_unavailablePng);
 class Workshop extends _react.Component {
     constructor(){
         super();
@@ -25508,39 +25506,39 @@ class Workshop extends _react.Component {
             },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 56
+                lineNumber: 55
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 57
+                lineNumber: 56
             },
             __self: this
         }, "Pending Workshop proposals"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "container w-75 p-3 ",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 58
+                lineNumber: 57
             },
             __self: this
         }, this.state.uploads.length != 0 ? /*#__PURE__*/ _reactDefault.default.createElement("table", {
             className: "table",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 60
+                lineNumber: 59
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 61
+                lineNumber: 60
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 62
+                lineNumber: 61
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -25548,7 +25546,7 @@ class Workshop extends _react.Component {
             id: "file",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 63
+                lineNumber: 62
             },
             __self: this
         }, "file"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -25556,7 +25554,7 @@ class Workshop extends _react.Component {
             id: "user",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 64
+                lineNumber: 63
             },
             __self: this
         }, "User"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -25564,7 +25562,7 @@ class Workshop extends _react.Component {
             id: "name",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 65
+                lineNumber: 64
             },
             __self: this
         }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -25572,7 +25570,7 @@ class Workshop extends _react.Component {
             id: "uploadDate",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 66
+                lineNumber: 65
             },
             __self: this
         }, "Upload Date"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -25580,7 +25578,7 @@ class Workshop extends _react.Component {
             id: "approve",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 67
+                lineNumber: 66
             },
             __self: this
         }, "Approve"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -25588,13 +25586,13 @@ class Workshop extends _react.Component {
             id: "reject",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 68
+                lineNumber: 67
             },
             __self: this
         }, "Reject"))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 71
+                lineNumber: 70
             },
             __self: this
         }, this.state.uploads.map((workshop)=>{
@@ -25602,7 +25600,7 @@ class Workshop extends _react.Component {
                 key: workshop._id,
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 74
+                    lineNumber: 73
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -25610,42 +25608,42 @@ class Workshop extends _react.Component {
                 id: "trfile",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 75
+                    lineNumber: 74
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
                 href: `http://localhost:8070/${workshop.filePath}`,
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 76
+                    lineNumber: 75
                 },
                 __self: this
             }, workshop.title)), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 id: "trSize",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 78
+                    lineNumber: 77
                 },
                 __self: this
             }, workshop.fileSize), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 id: "trName",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 79
+                    lineNumber: 78
                 },
                 __self: this
             }, workshop.user.name), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 id: "trUploadDate",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 80
+                    lineNumber: 79
                 },
                 __self: this
             }, workshop.uploadDate), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 id: "trApprove",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 81
+                    lineNumber: 80
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -25656,14 +25654,14 @@ class Workshop extends _react.Component {
                 ,
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 81
+                    lineNumber: 80
                 },
                 __self: this
             }, "Approve")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 id: "trRreject",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 82
+                    lineNumber: 81
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -25674,14 +25672,14 @@ class Workshop extends _react.Component {
                 ,
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 82
+                    lineNumber: 81
                 },
                 __self: this
             }, "Reject"))));
         }))) : /*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 89
+                lineNumber: 88
             },
             __self: this
         }))));
@@ -25694,7 +25692,7 @@ exports.default = Workshop;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","url:../../public/images/unavailable.png":"3nLuj","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7rA65":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7rA65":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"4qfhW"}],"4qfhW":[function(require,module,exports) {
@@ -27060,10 +27058,7 @@ module.exports = CancelToken;
     return typeof payload === 'object' && payload.isAxiosError === true;
 };
 
-},{}],"3nLuj":[function(require,module,exports) {
-module.exports = require('./bundle-url').getBundleURL() + "unavailable.be9bff48.png";
-
-},{"./bundle-url":"3seVR"}],"52NPx":[function(require,module,exports) {
+},{}],"52NPx":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
