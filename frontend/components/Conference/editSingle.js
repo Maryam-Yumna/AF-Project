@@ -168,7 +168,8 @@ console.log(props.match.params.id)
 }
 
 
-    return(
+    return(<div class = "bodyt">
+         <div class = "formCreate">
         <div>
 
             {
@@ -181,7 +182,8 @@ console.log(props.match.params.id)
           
                   <form onSubmit={updateIetm}>
                 
-          
+                  <br/> <br/>
+          <center> <h2>Edit CONFERENCE DETAILS</h2></center> 
                            
                       <label for="name">Conference Name</label>
                       <input type="text" class="form-control"  id="name" value={item.confName} placeholder="Enter conference Name"
@@ -257,9 +259,8 @@ console.log(props.match.params.id)
                     </div>
           
                    
-                  <br/>
-                  <button type="submit" class="btn btn-primary">Update</button>
-                </form>
+                    <br/>
+          <button type="submit" class="btnprimary">Update</button> </form>
                 </div>
                 
               </div>
@@ -270,12 +271,12 @@ console.log(props.match.params.id)
             }
 
 
-
+</div>
         </div>
         
 
        
-    )
+        </div>  )
 
 
 }

@@ -21,6 +21,7 @@ import EditConference from './components/Conference/editSingle';
 import Approveall from './components/AdminApprove/approveALL';
 import ApproveSingle from './components/AdminApprove/aprroveSingle';
 import AdminHome from './components/AdminHome/home';
+import Admin2Home from './components/AdminHome2/home';
 // import uploadfiles from './components/uploadfiles';
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
                     <Route path="/attendee" exact component={Attendee}/>
 
                     <Route path="/adminHome" component={AdminHome} exact/>
+                    <Route path="/admin2Home" component={Admin2Home} exact/>
                     <Route path = "/createConference" component = {Createconference} ></Route>
                     <Route path = "/Conferences" component = {getconference} ></Route>
                     <Route path="/editConference/:id" component={EditConference} />
@@ -47,7 +49,7 @@ class App extends Component {
 
                     <Route path="/approveall" component={Approveall} />
                     <Route path="/approvesingle/:id" component={ApproveSingle} />
-                    <Route path = "/gettotal/:id" component = {amount2} exact ></Route>
+                    
                     
                     <Route path="/login" exact component={Login}/>
                     

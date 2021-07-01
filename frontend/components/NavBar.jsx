@@ -55,10 +55,10 @@ class NavBar extends Component {
                     {this.state.user.userType === "admin"?(
                                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li className="nav-item">
-                                        <Link className="nav-link" aria-current="page" to="/" activeclassname="active">Home</Link>
+                                        <Link className="nav-link" aria-current="page" to="/admin2Home" activeclassname="active">Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/" activeclassname="active">Downloads</Link>
+                                        <Link className="nav-link" to="/approveall" activeclassname="active">Approve Conferences</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/" activeclassname="active" >Researchers</Link>
@@ -70,13 +70,13 @@ class NavBar extends Component {
                             ):this.state.user.userType === "editor"?(
                                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li className="nav-item">
-                                        <Link className="nav-link" aria-current="page" to="/" activeclassname="active">Home</Link>
+                                        <Link className="nav-link" aria-current="page" to="/adminHome" activeclassname="active">Welcome to Editor Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/" activeclassname="active">Downloads</Link>
+                                        <Link className="nav-link" to="/createConference" activeclassname="active">Add Conference</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/" activeclassname="active" >Researchers</Link>
+                                        <Link className="nav-link" to="/Conferences" activeclassname="conferences" >conferences</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/" activeclassname="active">WorkShops</Link>

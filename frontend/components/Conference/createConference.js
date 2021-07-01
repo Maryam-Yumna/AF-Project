@@ -1,6 +1,6 @@
 import React,{useState}  from "react"
 import axios from "axios"
-
+import './conference.css';
 
 export default function AddConference(){
 
@@ -64,15 +64,17 @@ async function  sentData(e){
   }
      
 
-  return (
-
+  return (<div class = "bodyt">
+    <div class = "formCreate">
+     
     <div className='container'>
 
        <form onSubmit={sentData}>
-
+       <br/> <br/>
           <center> <h2>ADD CONFERENCE DETAILS</h2></center> 
 
           <div class="form-group">
+            
             <label for="name">Conference Name</label>
             <input type="text" class="form-control" id="name"  placeholder="Enter conference Name"
             onChange={(e)=>{setconfName(e.target.value) }}/>
@@ -160,12 +162,14 @@ async function  sentData(e){
          
 
           <br/>
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btnprimary">Submit</button>
         </form>
 
-
+        <br/>
 
       </div>
-       )
+
+      </div>
+    </div>   )
   
 }

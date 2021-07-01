@@ -168,22 +168,24 @@ console.log(props.match.params.id)
 }
 
 
-    return(
+    return(<div class = "bodyl">
 
       
-        <div>
+        <div  >
 
           
 
             {
 
             gotData ?(
+               
 
                 <div className='container'>
-    
-                <h1>APPROVE CONFERENCE DETAILS</h1>
+    <br /><br /><br />
+               
           
-                  <form onSubmit={updateIetm}>
+                  <form onSubmit={updateIetm} class = "bodyf" >
+                  <h1 style={{color:"black"}}>APPROVE CONFERENCE DETAILS</h1>
                 
                   <table>
   
@@ -278,14 +280,14 @@ console.log(props.match.params.id)
 
 <tr>
     <th>  <label for="descrition"><h2>Status</h2></label></th>
-    <th>     <input type="text" class="form-control" value="pending"  id="description"  placeholder="Enter Paper submition close date" value={item.status}
+    <th>     <input type="text"  class="form-control" value="pending"  id="description"  placeholder="Enter Paper submition close date" value={item.status}
                     
-                    onChange={handleStatus}/></th>
+                    onChange={handleStatus}/> <button type="submit" class="imary">Submit status</button></th>
     
 </tr>
 </table>
          <br/>
-                  <button type="submit" class="btn btn-primary">Update</button>
+                  
                 </form>
                 </div>
                 
@@ -301,7 +303,7 @@ console.log(props.match.params.id)
         
 
        
-    )
+  </div>  )
 
 
 }

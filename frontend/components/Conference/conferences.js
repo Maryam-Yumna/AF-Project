@@ -1,6 +1,7 @@
 import React , {Component} from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom'
+import './conference.css';
 
 class Conferences extends Component{
     constructor(props){
@@ -21,43 +22,99 @@ class Conferences extends Component{
    
 
     render() {
-        return (
-          <div className="container">
-            <h1>Conferences</h1>
-            <h2>Your confirmation will recive within two days. You can update your details after submition within submission date</h2>
+        return (<div class = "bodyt">
+  
+         
+          <div className="container"
+          ><br /><br />
+            <h1 style={{color:"white"}} >Conferences</h1>
+            <h3 style={{color:"white"}} >confirmation will recive within two days. You can update your details after submition within submission date</h3>
             {this.state.conferences.length > 0 && this.state.conferences.map((item, index) => (
               <div key={index} className="card mb-3">
                 <div className="p-3" onClick={e => this.navigateSubjectPage(e, item._id)}> 
-                <h4>Conference Name: {item.confName}</h4>
-                  <h5>Year: {item.year}</h5>
-                  <h5>Descriprion: {item.description}</h5>
-                  <h5>startingDate: {item.startingDate}</h5>
-                  <h5>endDate: {item.endDate}</h5>
-                  <h5>venue: {item.venue}</h5>
-                  <h5>RegistrationOpen: {item.RegistrationOpen}</h5>
-                  <h5>RegistrationClosed: {item.RegistrationClosed}</h5>
-                  <h5>paperSubmitionOpen: {item.paperSubmitionOpen}</h5>
-                  <h5>workshopSubmitionOpen: {item.workshopSubmitionOpen}</h5>
-                  <h5>workshopSubmitionClose: {item.workshopSubmitionClose}</h5>
-                  <h5>status: {item.status}</h5>
+                                 
+                  <table id="customers">
+                   
+                    <tr>
+                      <td>Conference Name :</td>
+                      <td>{item.confName}</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Year :</td>
+                      <td>{item.year}</td>
+                  
+                    </tr>
+                    <tr>
+                      <td>Descriprion:</td>
+                      <td>{item.description}</td>
+                   
+                    </tr>
+                    <tr>
+                      <td>startingDate</td>
+                      <td>{item.startingDate}</td>
+                     
+                    </tr>
+                    <tr>
+                      <td>endDate:</td>
+                      <td> {item.endDate}</td>
+                     
+                    </tr>
+                    <tr>
+                      <td>venue</td>
+                      <td>{item.venue}</td>
+                     
+                    </tr>
+                    <tr>
+                      <td>RegistrationOpen: </td>
+                      <td>{item.RegistrationOpen}</td>
+                  
+                    </tr>
+                    <tr>
+                      <td>RegistrationClosed: </td>
+                      <td>{item.RegistrationClosed}</td>
+                     
+                    </tr>
+                    <tr>
+                      <td>paperSubmitionOpen:</td>
+                      <td>{item.paperSubmitionOpen}</td>
+                     
+                    </tr>
+                    <tr>
+                      <td>workshopSubmitionOpen: </td>
+                      <td>{item.workshopSubmitionOpen}</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>workshopSubmitionClose: </td>
+                      <td>{item.workshopSubmitionClose}</td>
+                      
+                    </tr>
+                    <tr>
+                      <td>status:  </td>
+                      <td style={{color:"red"}}><h5>{item.status}</h5></td>
+                      
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td><div className="row mt-2">
+                <button id="button2" className="col btn btn-danger ps-4 pe-4" style={{color:"balck", border:"none" ,margin:"2px", width :"100px" , background :"#rgba(58, 9, 148, 0.953)"}}>  <Link to={"/editConference/" + item._id}  style={{color:"black" , width :"100px" }}>Edit</Link></button>
+             
+                  <button id="button2" className="col btn btn-danger ps-4 pe-4" style={{color:"black" ,border:"none",margin:"2px", width :"100px" ,background :"#rgba(58, 9, 148, 0.953)"}} onClick={()=>{ deleteItem(item._id)}}>Delete</button>
+              </div></td>
+                      
+                    </tr>
+                  </table>
 
-                 
+                                  
                 </div>
 
-                <div className="row mt-2">
-                <button id="button2" className="col btn btn-danger ps-4 pe-4">  <Link to={"/editConference/" + item._id} className="col btn ps-4 pe-4" style={{color:"white"}}>Edit</Link></button>
-              </div>
-                <div className="row mt-2">
-                  <button id="button2" className="col btn btn-danger ps-4 pe-4" onClick={()=>{ deleteItem(item._id)}}>Delete</button>
-              </div>
-              <div  className="row mt-2">
-                  <button  className="col btn btn-danger ps-4 pe-4" id="butto3" onclick="this.disabled=true;document.getElementById('button1').disabled=true;document.getElementById('button2').disabled=true;">confirm</button>
-              </div>
          
               </div>
             ))}
           </div>
-        )
+          </div>
+       )
       }
     }
 

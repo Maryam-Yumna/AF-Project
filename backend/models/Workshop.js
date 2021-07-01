@@ -2,9 +2,7 @@ const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 const workshopSchema = new Schema({
-    conference:{
-        type: Schema.Types.ObjectId, ref: 'Conference', 
-    },
+    conference:[{ type: mongoose.Schema.Types.ObjectId, required: false, ref: 'conferences'}],
     year:{
         type: Number
     },
@@ -16,24 +14,12 @@ const workshopSchema = new Schema({
         type: String,
         required: true,
     },
-    conductedBy: [
-        {
-            name: {
-                type: String,
-                required: true
-            },
-            organization: {
-                type: String,
-                required: true
-            },
-            description: {
-                type: String,
-                required: true,
-            },
-        },
-    ],
+    conductedBy: {
+        type: String,
+        required: true,
+    },
     conductedOn:{
-        type: Date,
+        type: String,
         required: true
     }
 });

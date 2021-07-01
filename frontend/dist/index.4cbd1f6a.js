@@ -21882,25 +21882,27 @@ var _aprroveSingle = require("./components/AdminApprove/aprroveSingle");
 var _aprroveSingleDefault = parcelHelpers.interopDefault(_aprroveSingle);
 var _home1 = require("./components/AdminHome/home");
 var _homeDefault1 = parcelHelpers.interopDefault(_home1);
+var _home2 = require("./components/AdminHome2/home");
+var _homeDefault2 = parcelHelpers.interopDefault(_home2);
 // import uploadfiles from './components/uploadfiles';
 class App extends _react.Component {
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 29
+                lineNumber: 30
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_navBarDefault.default, {
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 30
+                lineNumber: 31
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 31
+                lineNumber: 32
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21909,7 +21911,7 @@ class App extends _react.Component {
             component: _reviewerDashboardDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 32
+                lineNumber: 33
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21918,7 +21920,7 @@ class App extends _react.Component {
             component: _workshopDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 33
+                lineNumber: 34
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21927,7 +21929,7 @@ class App extends _react.Component {
             component: _papersDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 34
+                lineNumber: 35
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21936,7 +21938,7 @@ class App extends _react.Component {
             component: _homeDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 35
+                lineNumber: 36
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21945,7 +21947,7 @@ class App extends _react.Component {
             component: _registerDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 36
+                lineNumber: 37
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21954,7 +21956,7 @@ class App extends _react.Component {
             component: _paymentFormDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 37
+                lineNumber: 38
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21963,7 +21965,7 @@ class App extends _react.Component {
             component: _workshopPresenterDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 38
+                lineNumber: 39
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21972,7 +21974,7 @@ class App extends _react.Component {
             component: _resercherDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 39
+                lineNumber: 40
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21981,7 +21983,7 @@ class App extends _react.Component {
             component: _attendeeDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 40
+                lineNumber: 41
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21990,7 +21992,16 @@ class App extends _react.Component {
             exact: true,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 42
+                lineNumber: 43
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/admin2Home",
+            component: _homeDefault2.default,
+            exact: true,
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
+                lineNumber: 44
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21998,7 +22009,7 @@ class App extends _react.Component {
             component: _createConferenceDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 43
+                lineNumber: 45
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22006,7 +22017,7 @@ class App extends _react.Component {
             component: _conferencesDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 44
+                lineNumber: 46
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22014,7 +22025,7 @@ class App extends _react.Component {
             component: _editSingleDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 45
+                lineNumber: 47
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22022,7 +22033,7 @@ class App extends _react.Component {
             component: _approveALLDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 48
+                lineNumber: 50
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22030,16 +22041,7 @@ class App extends _react.Component {
             component: _aprroveSingleDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 49
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
-            path: "/gettotal/:id",
-            component: amount2,
-            exact: true,
-            __source: {
-                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 50
+                lineNumber: 51
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22048,7 +22050,7 @@ class App extends _react.Component {
             component: _loginDefault.default,
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 52
+                lineNumber: 54
             },
             __self: this
         }))));
@@ -22061,7 +22063,7 @@ exports.default = App;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/NavBar":"6OOgl","./components/Home":"2NRGt","./components/Reviewer/ReviewerDashboard":"1f04t","./components/Reviewer/Workshop":"2P0i2","./components/Login/Register":"3CyD9","./components/Footer/Footer":"4ovnW","./components/PaymentForm/PaymentForm":"6EpNI","./components/Login/Login":"6CUh6","./components/User/WorkshopPresenter":"6yoyI","./components/User/Resercher":"79qkq","./components/User/Attendee":"5jm0l","./components/Reviewer/Papers":"5aDbG","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/Conference/createConference":"775o9","./components/Conference/conferences":"4IDgW","./components/Conference/editSingle":"2ffx6","./components/AdminApprove/approveALL":"1UZk6","./components/AdminApprove/aprroveSingle":"3y0fy","./components/AdminHome/home":"7KVrI"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/NavBar":"6OOgl","./components/Home":"2NRGt","./components/Reviewer/ReviewerDashboard":"1f04t","./components/Reviewer/Workshop":"2P0i2","./components/Login/Register":"3CyD9","./components/Footer/Footer":"4ovnW","./components/PaymentForm/PaymentForm":"6EpNI","./components/Login/Login":"6CUh6","./components/User/WorkshopPresenter":"6yoyI","./components/User/Resercher":"79qkq","./components/User/Attendee":"5jm0l","./components/Reviewer/Papers":"5aDbG","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/Conference/createConference":"775o9","./components/Conference/conferences":"4IDgW","./components/Conference/editSingle":"2ffx6","./components/AdminApprove/approveALL":"1UZk6","./components/AdminApprove/aprroveSingle":"3y0fy","./components/AdminHome/home":"7KVrI","./components/AdminHome2/home":"1PfpK"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -25265,7 +25267,7 @@ class NavBar extends _react.Component {
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
             "aria-current": "page",
-            to: "/",
+            to: "/admin2Home",
             activeclassname: "active",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -25281,14 +25283,14 @@ class NavBar extends _react.Component {
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
-            to: "/",
+            to: "/approveall",
             activeclassname: "active",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 61
             },
             __self: this
-        }, "Downloads")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "Approve Conferences")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             className: "nav-item",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -25337,14 +25339,14 @@ class NavBar extends _react.Component {
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
             "aria-current": "page",
-            to: "/",
+            to: "/adminHome",
             activeclassname: "active",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 73
             },
             __self: this
-        }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "Welcome to Editor Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             className: "nav-item",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -25353,14 +25355,14 @@ class NavBar extends _react.Component {
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
-            to: "/",
+            to: "/createConference",
             activeclassname: "active",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 76
             },
             __self: this
-        }, "Downloads")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "Add Conference")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             className: "nav-item",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -25369,14 +25371,14 @@ class NavBar extends _react.Component {
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
-            to: "/",
-            activeclassname: "active",
+            to: "/Conferences",
+            activeclassname: "conferences",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 79
             },
             __self: this
-        }, "Researchers")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "conferences")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             className: "nav-item",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -27222,19 +27224,31 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 // import Background from 'url:../public/images/BackgroundHomeImage.png';
 var _background2Png = require("url:../public/images/background2.png");
 var _background2PngDefault = parcelHelpers.interopDefault(_background2Png);
+var _imagesJpg = require("url:../public/images/images.jpg");
+var _imagesJpgDefault = parcelHelpers.interopDefault(_imagesJpg);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRouterDom = require("react-router-dom");
 class Home extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            conferences: []
+        };
+    }
+    componentDidMount() {
+        _axiosDefault.default.get('http://localhost:8070/conferenceAPi/getaproved').then((response)=>{
+            this.setState({
+                conferences: response.data.data
+            });
+        });
+    }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
-                lineNumber: 8
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "backgroundImage",
-            __source: {
-                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
-                lineNumber: 9
+                lineNumber: 31
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
@@ -27244,10 +27258,238 @@ class Home extends _react.Component {
             },
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
-                lineNumber: 10
+                lineNumber: 33
             },
             __self: this
-        }))));
+        }), /*#__PURE__*/ _reactDefault.default.createElement("center", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 36
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            class: "card-img-top",
+            src: "https://www.cosl.lk/images/slidernew/slider-3.jpg",
+            alt: "Card image cap",
+            style: {
+                width: '50%',
+                height: '50%'
+            },
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 37
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            class: "card-img-top",
+            src: "https://cmb.ac.lk/wp-content/uploads/icdm23-409x258.jpg",
+            alt: "Card image cap",
+            style: {
+                width: '50%',
+                height: '50%'
+            },
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 38
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-body",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 40
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            class: "card-title",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 41
+            },
+            __self: this
+        }, "WELCOME TO CONVENTION"), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+            class: "card-title",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 42
+            },
+            __self: this
+        }, "BIGGEST DEVELOPER CONFERENCE 2020"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 43
+            },
+            __self: this
+        }, "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "#",
+            class: "btn btn-primary",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 44
+            },
+            __self: this
+        }, "check here")), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            style: {
+                color: "#272554"
+            },
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 51
+            },
+            __self: this
+        }, "Conferences this year"), this.state.conferences.length > 0 && this.state.conferences.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+                key: index,
+                className: "card mb-3",
+                src: _background2PngDefault.default,
+                style: {
+                },
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 53
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                className: "p-3",
+                onClick: (e)=>this.navigateSubjectPage(e, item._id)
+                ,
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 54
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("center", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 56
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("table", {
+                id: "cust",
+                style: {
+                    width: '70%'
+                },
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 57
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
+                src: _imagesJpgDefault.default,
+                style: {
+                    width: '400px'
+                },
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 59
+                },
+                __self: this
+            }), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 60
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                rowspan: "2",
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 62
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 62
+                },
+                __self: this
+            }, item.confName))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 66
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 68
+                },
+                __self: this
+            }, item.year)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 71
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                rowspan: "2",
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 73
+                },
+                __self: this
+            }, item.description)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 76
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 78
+                },
+                __self: this
+            }, item.startingDate, " to ", item.endDate, " ")), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 82
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 84
+                },
+                __self: this
+            }, "At", item.venue)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 87
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 89
+                },
+                __self: this
+            }, " ", /*#__PURE__*/ _reactDefault.default.createElement("lable", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 89
+                },
+                __self: this
+            }, "Registration Open from :", item.RegistrationOpen, " to ", item.RegistrationClosed), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 90
+                },
+                __self: this
+            }, " ", /*#__PURE__*/ _reactDefault.default.createElement("lable", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 90
+                },
+                __self: this
+            }, "Paper SubmitionOpen :", item.paperSubmitionOpen, " to ", item.workshopSubmitionClose)), /*#__PURE__*/ _reactDefault.default.createElement("lable", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 91
+                },
+                __self: this
+            }, "workshop Submition Open :", item.workshopSubmitionOpen, " to ", item.workshopSubmitionClose)))))))
+        )));
     }
 }
 exports.default = Home;
@@ -27257,7 +27499,7 @@ exports.default = Home;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","url:../public/images/background2.png":"7HxCf","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7HxCf":[function(require,module,exports) {
+},{"react":"3b2NM","url:../public/images/background2.png":"7HxCf","axios":"7rA65","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","url:../public/images/images.jpg":"5TKz8"}],"7HxCf":[function(require,module,exports) {
 module.exports = require('./bundle-url').getBundleURL() + "background2.7338f5a0.png";
 
 },{"./bundle-url":"3seVR"}],"3seVR":[function(require,module,exports) {
@@ -27288,7 +27530,10 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"1f04t":[function(require,module,exports) {
+},{}],"5TKz8":[function(require,module,exports) {
+module.exports = require('./bundle-url').getBundleURL() + "images.f8db6ca4.jpg";
+
+},{"./bundle-url":"3seVR"}],"1f04t":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29715,6 +29960,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _conferenceCss = require("./conference.css");
 var _s = $RefreshSig$();
 function AddConference() {
     _s();
@@ -29764,43 +30010,69 @@ function AddConference() {
         }
     }
     return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "bodyt",
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 67
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "formCreate",
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 68
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "container",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 69
+            lineNumber: 70
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("form", {
         onSubmit: sentData,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 71
+            lineNumber: 72
         },
         __self: this
-    }, /*#__PURE__*/ _reactDefault.default.createElement("center", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
             lineNumber: 73
+        },
+        __self: this
+    }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 73
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement("center", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 74
         },
         __self: this
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("h2", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 73
+            lineNumber: 74
         },
         __self: this
     }, "ADD CONFERENCE DETAILS")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 75
+            lineNumber: 76
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "name",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 76
+            lineNumber: 78
         },
         __self: this
     }, "Conference Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29813,21 +30085,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 77
+            lineNumber: 79
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 81
+            lineNumber: 83
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 82
+            lineNumber: 84
         },
         __self: this
     }, "Year"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29840,21 +30112,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 83
+            lineNumber: 85
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 88
+            lineNumber: 90
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 89
+            lineNumber: 91
         },
         __self: this
     }, "Description"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29867,21 +30139,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 90
+            lineNumber: 92
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 95
+            lineNumber: 97
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 96
+            lineNumber: 98
         },
         __self: this
     }, "Venue"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29894,21 +30166,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 97
+            lineNumber: 99
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 102
+            lineNumber: 104
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 103
+            lineNumber: 105
         },
         __self: this
     }, "Startig date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29921,21 +30193,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 104
+            lineNumber: 106
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 108
+            lineNumber: 110
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 109
+            lineNumber: 111
         },
         __self: this
     }, "End date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29948,21 +30220,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 110
+            lineNumber: 112
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 114
+            lineNumber: 116
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 115
+            lineNumber: 117
         },
         __self: this
     }, "Registration open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -29975,21 +30247,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 116
+            lineNumber: 118
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 120
+            lineNumber: 122
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 121
+            lineNumber: 123
         },
         __self: this
     }, "Registration close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30002,21 +30274,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 122
+            lineNumber: 124
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 127
+            lineNumber: 129
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 128
+            lineNumber: 130
         },
         __self: this
     }, "Paper submition open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30029,21 +30301,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 129
+            lineNumber: 131
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 133
+            lineNumber: 135
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 134
+            lineNumber: 136
         },
         __self: this
     }, "Paper submition close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30056,21 +30328,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 135
+            lineNumber: 137
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 140
+            lineNumber: 142
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 141
+            lineNumber: 143
         },
         __self: this
     }, "work shop submition open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30083,21 +30355,21 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 142
+            lineNumber: 144
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 146
+            lineNumber: 148
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 147
+            lineNumber: 149
         },
         __self: this
     }, "work shop submition close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30110,14 +30382,14 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 148
+            lineNumber: 150
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 153
+            lineNumber: 155
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30131,24 +30403,30 @@ function AddConference() {
         },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 155
+            lineNumber: 157
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 162
+            lineNumber: 164
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
         type: "submit",
-        class: "btn btn-primary",
+        class: "btnprimary",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
-            lineNumber: 163
+            lineNumber: 165
         },
         __self: this
-    }, "Submit"))));
+    }, "Submit")), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 168
+        },
+        __self: this
+    })))));
 }
 exports.default = AddConference;
 _s(AddConference, "FxzS4zhwzbPcvbkvF0Qkk1ulbzk=");
@@ -30161,7 +30439,7 @@ $RefreshReg$(_c, "AddConference");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4IDgW":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./conference.css":"VokjV"}],"VokjV":[function() {},{}],"4IDgW":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30175,6 +30453,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _reactRouterDom = require("react-router-dom");
+var _conferenceCss = require("./conference.css");
 class Conferences extends _react.Component {
     constructor(props){
         super(props);
@@ -30191,30 +30470,55 @@ class Conferences extends _react.Component {
     }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
+            class: "bodyt",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                 lineNumber: 25
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                lineNumber: 26
+                lineNumber: 28
             },
             __self: this
-        }, "Conferences"), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                lineNumber: 27
+                lineNumber: 29
             },
             __self: this
-        }, "Your confirmation will recive within two days. You can update your details after submition within submission date"), this.state.conferences.length > 0 && this.state.conferences.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                lineNumber: 29
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            style: {
+                color: "white"
+            },
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                lineNumber: 30
+            },
+            __self: this
+        }, "Conferences"), /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+            style: {
+                color: "white"
+            },
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                lineNumber: 31
+            },
+            __self: this
+        }, "confirmation will recive within two days. You can update your details after submition within submission date"), this.state.conferences.length > 0 && this.state.conferences.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
                 key: index,
                 className: "card mb-3",
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 29
+                    lineNumber: 33
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
@@ -30223,143 +30527,312 @@ class Conferences extends _react.Component {
                 ,
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 30
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("h4", {
-                __source: {
-                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 31
-                },
-                __self: this
-            }, "Conference Name: ", item.confName), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 32
-                },
-                __self: this
-            }, "Year: ", item.year), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 33
-                },
-                __self: this
-            }, "Descriprion: ", item.description), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                     lineNumber: 34
                 },
                 __self: this
-            }, "startingDate: ", item.startingDate), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 35
-                },
-                __self: this
-            }, "endDate: ", item.endDate), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            }, /*#__PURE__*/ _reactDefault.default.createElement("table", {
+                id: "customers",
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                     lineNumber: 36
                 },
                 __self: this
-            }, "venue: ", item.venue), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-                __source: {
-                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 37
-                },
-                __self: this
-            }, "RegistrationOpen: ", item.RegistrationOpen), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                     lineNumber: 38
                 },
                 __self: this
-            }, "RegistrationClosed: ", item.RegistrationClosed), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                     lineNumber: 39
                 },
                 __self: this
-            }, "paperSubmitionOpen: ", item.paperSubmitionOpen), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            }, "Conference Name :"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                     lineNumber: 40
                 },
                 __self: this
-            }, "workshopSubmitionOpen: ", item.workshopSubmitionOpen), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            }, item.confName)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 41
+                    lineNumber: 43
                 },
                 __self: this
-            }, "workshopSubmitionClose: ", item.workshopSubmitionClose), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 42
+                    lineNumber: 44
                 },
                 __self: this
-            }, "status: ", item.status)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                className: "row mt-2",
+            }, "Year :"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 47
+                    lineNumber: 45
                 },
                 __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
-                id: "button2",
-                className: "col btn btn-danger ps-4 pe-4",
+            }, item.year)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                     lineNumber: 48
                 },
                 __self: this
-            }, " ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
-                to: "/editConference/" + item._id,
-                className: "col btn ps-4 pe-4",
-                style: {
-                    color: "white"
-                },
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 48
+                    lineNumber: 49
                 },
                 __self: this
-            }, "Edit"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                className: "row mt-2",
+            }, "Descriprion:"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                     lineNumber: 50
                 },
                 __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
-                id: "button2",
-                className: "col btn btn-danger ps-4 pe-4",
-                onClick: ()=>{
-                    deleteItem(item._id);
-                },
-                __source: {
-                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
-                    lineNumber: 51
-                },
-                __self: this
-            }, "Delete")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-                className: "row mt-2",
+            }, item.description)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                     lineNumber: 53
                 },
                 __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
-                className: "col btn btn-danger ps-4 pe-4",
-                id: "butto3",
-                onclick: "this.disabled=true;document.getElementById('button1').disabled=true;document.getElementById('button2').disabled=true;",
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
                     lineNumber: 54
                 },
                 __self: this
-            }, "confirm")))
-        )));
+            }, "startingDate"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 55
+                },
+                __self: this
+            }, item.startingDate)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 58
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 59
+                },
+                __self: this
+            }, "endDate:"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 60
+                },
+                __self: this
+            }, " ", item.endDate)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 63
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 64
+                },
+                __self: this
+            }, "venue"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 65
+                },
+                __self: this
+            }, item.venue)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 68
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 69
+                },
+                __self: this
+            }, "RegistrationOpen: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 70
+                },
+                __self: this
+            }, item.RegistrationOpen)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 73
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 74
+                },
+                __self: this
+            }, "RegistrationClosed: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 75
+                },
+                __self: this
+            }, item.RegistrationClosed)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 78
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 79
+                },
+                __self: this
+            }, "paperSubmitionOpen:"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 80
+                },
+                __self: this
+            }, item.paperSubmitionOpen)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 83
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 84
+                },
+                __self: this
+            }, "workshopSubmitionOpen: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 85
+                },
+                __self: this
+            }, item.workshopSubmitionOpen)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 88
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 89
+                },
+                __self: this
+            }, "workshopSubmitionClose: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 90
+                },
+                __self: this
+            }, item.workshopSubmitionClose)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 93
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 94
+                },
+                __self: this
+            }, "status: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                style: {
+                    color: "red"
+                },
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 95
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 95
+                },
+                __self: this
+            }, item.status))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 98
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 99
+                },
+                __self: this
+            }), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 100
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                className: "row mt-2",
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 100
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+                id: "button2",
+                className: "col btn btn-danger ps-4 pe-4",
+                style: {
+                    color: "balck",
+                    border: "none",
+                    margin: "2px",
+                    width: "100px",
+                    background: "#rgba(58, 9, 148, 0.953)"
+                },
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 101
+                },
+                __self: this
+            }, " ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+                to: "/editConference/" + item._id,
+                style: {
+                    color: "black",
+                    width: "100px"
+                },
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 101
+                },
+                __self: this
+            }, "Edit")), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+                id: "button2",
+                className: "col btn btn-danger ps-4 pe-4",
+                style: {
+                    color: "black",
+                    border: "none",
+                    margin: "2px",
+                    width: "100px",
+                    background: "#rgba(58, 9, 148, 0.953)"
+                },
+                onClick: ()=>{
+                    deleteItem(item._id);
+                },
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 103
+                },
+                __self: this
+            }, "Delete")))))))
+        ))));
     }
 }
 let deleteItem = (id)=>{
@@ -30384,7 +30857,7 @@ exports.default = Conferences;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2ffx6":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./conference.css":"VokjV"}],"VokjV":[function() {},{}],"2ffx6":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30544,37 +31017,75 @@ let EditSingle = (props)=>{
         console.log(props.match.params.id);
     };
     return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "bodyt",
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 171
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "formCreate",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
             lineNumber: 172
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 173
         },
         __self: undefined
     }, gotData ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "container",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 178
+            lineNumber: 179
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-wrapper",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 180
+            lineNumber: 181
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("form", {
         onSubmit: updateIetm,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 182
+            lineNumber: 183
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-        for: "name",
+    }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 185
+        },
+        __self: undefined
+    }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 185
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("center", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
             lineNumber: 186
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 186
+        },
+        __self: undefined
+    }, "Edit CONFERENCE DETAILS")), /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "name",
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 188
         },
         __self: undefined
     }, "Conference Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30586,21 +31097,21 @@ let EditSingle = (props)=>{
         onChange: handleName,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 187
+            lineNumber: 189
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 191
+            lineNumber: 193
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 192
+            lineNumber: 194
         },
         __self: undefined
     }, "Year"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30612,21 +31123,21 @@ let EditSingle = (props)=>{
         onChange: handleYear,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 193
+            lineNumber: 195
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 197
+            lineNumber: 199
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 198
+            lineNumber: 200
         },
         __self: undefined
     }, "Description"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30638,21 +31149,21 @@ let EditSingle = (props)=>{
         onChange: handleDescription,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 199
+            lineNumber: 201
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 203
+            lineNumber: 205
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 204
+            lineNumber: 206
         },
         __self: undefined
     }, "Venue"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30664,21 +31175,21 @@ let EditSingle = (props)=>{
         onChange: handleVenue,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 205
+            lineNumber: 207
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 209
+            lineNumber: 211
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 210
+            lineNumber: 212
         },
         __self: undefined
     }, "Startig date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30690,21 +31201,21 @@ let EditSingle = (props)=>{
         onChange: handleStarignDate,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 211
+            lineNumber: 213
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 214
+            lineNumber: 216
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 215
+            lineNumber: 217
         },
         __self: undefined
     }, "End date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30716,21 +31227,21 @@ let EditSingle = (props)=>{
         onChange: handleEndDate,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 216
+            lineNumber: 218
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 219
+            lineNumber: 221
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 220
+            lineNumber: 222
         },
         __self: undefined
     }, "Registration open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30742,21 +31253,21 @@ let EditSingle = (props)=>{
         onChange: handleRegOpen,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 221
+            lineNumber: 223
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 224
+            lineNumber: 226
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 225
+            lineNumber: 227
         },
         __self: undefined
     }, "Registration close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30768,21 +31279,21 @@ let EditSingle = (props)=>{
         onChange: handleRegClose,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 226
+            lineNumber: 228
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 230
+            lineNumber: 232
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 231
+            lineNumber: 233
         },
         __self: undefined
     }, "Paper submition open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30794,21 +31305,21 @@ let EditSingle = (props)=>{
         onChange: handlePaperOpen,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 232
+            lineNumber: 234
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 235
+            lineNumber: 237
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 236
+            lineNumber: 238
         },
         __self: undefined
     }, "Paper submition close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30820,21 +31331,21 @@ let EditSingle = (props)=>{
         onChange: handlePaperClose,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 237
+            lineNumber: 239
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 241
+            lineNumber: 243
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 242
+            lineNumber: 244
         },
         __self: undefined
     }, "work shop submition open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30846,21 +31357,21 @@ let EditSingle = (props)=>{
         onChange: handleWorkShopOpen,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 243
+            lineNumber: 245
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 246
+            lineNumber: 248
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 247
+            lineNumber: 249
         },
         __self: undefined
     }, "work shop submition close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30872,14 +31383,14 @@ let EditSingle = (props)=>{
         onChange: handleWorkShopClose,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 248
+            lineNumber: 250
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "form-group",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 252
+            lineNumber: 254
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -30892,30 +31403,30 @@ let EditSingle = (props)=>{
         onChange: handleStatus,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 254
+            lineNumber: 256
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 260
+            lineNumber: 262
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
         type: "submit",
-        class: "btn btn-primary",
+        class: "btnprimary",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 261
+            lineNumber: 263
         },
         __self: undefined
-    }, "Update")))) : /*#__PURE__*/ _reactDefault.default.createElement("p", {
+    }, "Update"), " "))) : /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
-            lineNumber: 269
+            lineNumber: 270
         },
         __self: undefined
-    })));
+    })))));
 };
 _s(EditSingle, "JXHH0MPDIgpTiL4FhArWUct5Ctw=");
 _c = EditSingle;
@@ -30958,25 +31469,47 @@ class Conferences extends _react.Component {
     }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container",
+            class: "bodyt",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                lineNumber: 24
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
                 lineNumber: 25
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                lineNumber: 25
+            },
+            __self: this
+        }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                lineNumber: 25
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
                 lineNumber: 26
             },
             __self: this
-        }, "Conferences"), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            style: {
+                color: "white"
+            },
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
                 lineNumber: 27
             },
             __self: this
-        }, "Your confirmation will recive within two days. You can update your details after submition within submission date"), this.state.conferences.length > 0 && this.state.conferences.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        }, "Conferences"), this.state.conferences.length > 0 && this.state.conferences.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
                 key: index,
                 className: "card mb-3",
                 __source: {
@@ -30999,7 +31532,13 @@ class Conferences extends _react.Component {
                     lineNumber: 31
                 },
                 __self: this
-            }, "Conference Name: ", item.confName), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            }, /*#__PURE__*/ _reactDefault.default.createElement("b", {
+                __source: {
+                    fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 31
+                },
+                __self: this
+            }, "Conference Name: ", item.confName)), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
                     lineNumber: 32
@@ -31060,6 +31599,9 @@ class Conferences extends _react.Component {
                 },
                 __self: this
             }, "workshopSubmitionClose: ", item.workshopSubmitionClose), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                style: {
+                    color: "red"
+                },
                 __source: {
                     fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
                     lineNumber: 42
@@ -31092,7 +31634,7 @@ class Conferences extends _react.Component {
                 },
                 __self: this
             }, "Approve"))))
-        )));
+        ))));
     }
 }
 exports.default = Conferences;
@@ -31263,6 +31805,13 @@ let EditSingle = (props)=>{
         console.log(props.match.params.id);
     };
     return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "bodyl",
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 171
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
             lineNumber: 174
@@ -31272,50 +31821,72 @@ let EditSingle = (props)=>{
         className: "container",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 182
+            lineNumber: 183
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
             lineNumber: 184
         },
         __self: undefined
-    }, "APPROVE CONFERENCE DETAILS"), /*#__PURE__*/ _reactDefault.default.createElement("form", {
-        onSubmit: updateIetm,
+    }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 186
+            lineNumber: 184
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("table", {
+    }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 184
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+        onSubmit: updateIetm,
+        class: "bodyf",
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 187
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        style: {
+            color: "black"
+        },
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
             lineNumber: 188
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+    }, "APPROVE CONFERENCE DETAILS"), /*#__PURE__*/ _reactDefault.default.createElement("table", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
             lineNumber: 190
         },
         __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 192
+        },
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 191
+            lineNumber: 193
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 191
+            lineNumber: 193
         },
         __self: undefined
     }, "Conference Name")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 192
+            lineNumber: 194
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31327,32 +31898,32 @@ let EditSingle = (props)=>{
         onChange: handleName,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 192
+            lineNumber: 194
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 196
+            lineNumber: 198
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 197
+            lineNumber: 199
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 197
+            lineNumber: 199
         },
         __self: undefined
     }, "Year")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 198
+            lineNumber: 200
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31364,32 +31935,32 @@ let EditSingle = (props)=>{
         onChange: handleYear,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 198
+            lineNumber: 200
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 203
+            lineNumber: 205
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 204
+            lineNumber: 206
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 204
+            lineNumber: 206
         },
         __self: undefined
     }, "Description")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 205
+            lineNumber: 207
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31401,32 +31972,32 @@ let EditSingle = (props)=>{
         onChange: handleDescription,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 205
+            lineNumber: 207
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 209
+            lineNumber: 211
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 210
+            lineNumber: 212
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 210
+            lineNumber: 212
         },
         __self: undefined
     }, "Venue")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 211
+            lineNumber: 213
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31438,32 +32009,32 @@ let EditSingle = (props)=>{
         onChange: handleVenue,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 211
+            lineNumber: 213
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 216
+            lineNumber: 218
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 217
+            lineNumber: 219
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 217
+            lineNumber: 219
         },
         __self: undefined
     }, "Startig date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 218
+            lineNumber: 220
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31475,32 +32046,32 @@ let EditSingle = (props)=>{
         onChange: handleStarignDate,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 218
+            lineNumber: 220
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 223
+            lineNumber: 225
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 224
+            lineNumber: 226
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 224
+            lineNumber: 226
         },
         __self: undefined
     }, "End date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 225
+            lineNumber: 227
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31512,32 +32083,32 @@ let EditSingle = (props)=>{
         onChange: handleEndDate,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 225
+            lineNumber: 227
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 230
+            lineNumber: 232
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 231
+            lineNumber: 233
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 231
+            lineNumber: 233
         },
         __self: undefined
     }, "Registration open date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 232
+            lineNumber: 234
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31549,32 +32120,32 @@ let EditSingle = (props)=>{
         onChange: handleRegOpen,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 232
+            lineNumber: 234
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 237
+            lineNumber: 239
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 238
+            lineNumber: 240
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 238
+            lineNumber: 240
         },
         __self: undefined
     }, "Registration close date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 239
+            lineNumber: 241
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31586,32 +32157,32 @@ let EditSingle = (props)=>{
         onChange: handleRegClose,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 239
+            lineNumber: 241
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 244
+            lineNumber: 246
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 245
+            lineNumber: 247
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 245
+            lineNumber: 247
         },
         __self: undefined
     }, "Paper submition open date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 246
+            lineNumber: 248
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31623,32 +32194,32 @@ let EditSingle = (props)=>{
         onChange: handlePaperOpen,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 246
+            lineNumber: 248
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 251
+            lineNumber: 253
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 252
+            lineNumber: 254
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 252
+            lineNumber: 254
         },
         __self: undefined
     }, "Paper submition open date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 253
+            lineNumber: 255
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31660,32 +32231,32 @@ let EditSingle = (props)=>{
         onChange: handlePaperOpen,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 253
+            lineNumber: 255
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 258
+            lineNumber: 260
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 259
+            lineNumber: 261
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 259
+            lineNumber: 261
         },
         __self: undefined
     }, "Paper submition close date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 260
+            lineNumber: 262
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31697,32 +32268,32 @@ let EditSingle = (props)=>{
         onChange: handlePaperClose,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 260
+            lineNumber: 262
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 265
+            lineNumber: 267
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 266
+            lineNumber: 268
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 266
+            lineNumber: 268
         },
         __self: undefined
     }, "work shop submition open date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 267
+            lineNumber: 269
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31734,32 +32305,32 @@ let EditSingle = (props)=>{
         onChange: handleWorkShopOpen,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 267
+            lineNumber: 269
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 272
+            lineNumber: 274
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 273
+            lineNumber: 275
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 273
+            lineNumber: 275
         },
         __self: undefined
     }, "work shop submition close date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 274
+            lineNumber: 276
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31771,38 +32342,38 @@ let EditSingle = (props)=>{
         onChange: handleWorkShopClose,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 274
+            lineNumber: 276
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 279
+            lineNumber: 281
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 280
+            lineNumber: 282
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
         for: "descrition",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 280
+            lineNumber: 282
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 280
+            lineNumber: 282
         },
         __self: undefined
     }, "Status"))), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 281
+            lineNumber: 283
         },
         __self: undefined
     }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -31815,30 +32386,30 @@ let EditSingle = (props)=>{
         onChange: handleStatus,
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 281
+            lineNumber: 283
         },
         __self: undefined
-    })))), /*#__PURE__*/ _reactDefault.default.createElement("br", {
-        __source: {
-            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 287
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+    }), " ", /*#__PURE__*/ _reactDefault.default.createElement("button", {
         type: "submit",
-        class: "btn btn-primary",
+        class: "imary",
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 288
+            lineNumber: 285
         },
         __self: undefined
-    }, "Update"))) : /*#__PURE__*/ _reactDefault.default.createElement("p", {
+    }, "Submit status")))), /*#__PURE__*/ _reactDefault.default.createElement("br", {
         __source: {
             fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
-            lineNumber: 295
+            lineNumber: 289
         },
         __self: undefined
-    })));
+    }))) : /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 297
+        },
+        __self: undefined
+    }))));
 };
 _s(EditSingle, "JXHH0MPDIgpTiL4FhArWUct5Ctw=");
 _c = EditSingle;
@@ -31862,58 +32433,80 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactDom = require("react-dom");
-var _reactRouterDom = require("react-router-dom");
+// import Background from 'url:../public/images/BackgroundHomeImage.png';
+var _homeCss = require("./home.css");
 class AdminHome extends _react.Component {
-    constructor(props){
-        super(props);
-    }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "admin-body",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 8
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "backgroundImage",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 9
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 10
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 11
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
                 lineNumber: 12
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            type: "submit",
-            class: "btn btn-primary",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 12
+            },
+            __self: this
+        }, "Add Conference")), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, "conferences")), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
                 lineNumber: 14
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
-            to: "/createConference",
-            className: "col btn ps-4 pe-4",
-            style: {
-                color: "white"
-            },
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
                 lineNumber: 14
             },
             __self: this
-        }, "Admin")), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            type: "submit",
-            class: "btn btn-primary",
-            __source: {
-                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
-                lineNumber: 15
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
-            to: "/approveall",
-            className: "col btn ps-4 pe-4",
-            style: {
-                color: "white"
-            },
-            __source: {
-                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome\\home.js",
-                lineNumber: 15
-            },
-            __self: this
-        }, "Editor"))));
+        }, "Workshops"))))));
     }
 }
 exports.default = AdminHome;
@@ -31923,6 +32516,105 @@ exports.default = AdminHome;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-dom":"2sg1U","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","2Sq9Q","2GTLf"], "2GTLf", "parcelRequire0de8")
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./home.css":"6sORO"}],"6sORO":[function() {},{}],"1PfpK":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// import Background from 'url:../public/images/BackgroundHomeImage.png';
+var _reactRouterDom = require("react-router-dom");
+var _homeCss = require("./home.css");
+class AdminHome extends _react.Component {
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "admin-body",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 9
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "backgroundImage",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 10
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 11
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 12
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 12
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            style: {
+                color: "white"
+            },
+            className: "nav-link",
+            to: "/approveall",
+            activeclassname: "active",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, "Approve Conferences"))), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 15
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "C:\\Users\\Isini\\Desktop\\Application frameworks\\finals\\finalProject\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 15
+            },
+            __self: this
+        }, "conferences"))))));
+    }
+}
+exports.default = AdminHome;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","./home.css":"45PSI","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}],"45PSI":[function() {},{}]},["1j6wU","2Sq9Q","2GTLf"], "2GTLf", "parcelRequire0de8")
 
 //# sourceMappingURL=index.4cbd1f6a.js.map

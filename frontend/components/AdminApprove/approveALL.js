@@ -21,14 +21,14 @@ class Conferences extends Component{
    
 
     render() {
-        return (
+        return (<div class = "bodyt">
+          <br /> <br /> <br />
           <div className="container">
-            <h1>Conferences</h1>
-            <h2>Your confirmation will recive within two days. You can update your details after submition within submission date</h2>
+            <h1 style={{color:"white"}}>Conferences</h1>
             {this.state.conferences.length > 0 && this.state.conferences.map((item, index) => (
               <div key={index} className="card mb-3">
                 <div className="p-3" onClick={e => this.navigateSubjectPage(e, item._id)}> 
-                <h4>Conference Name: {item.confName}</h4>
+                <h4><b>Conference Name: {item.confName}</b></h4>
                   <h5>Year: {item.year}</h5>
                   <h5>Descriprion: {item.description}</h5>
                   <h5>startingDate: {item.startingDate}</h5>
@@ -39,7 +39,7 @@ class Conferences extends Component{
                   <h5>paperSubmitionOpen: {item.paperSubmitionOpen}</h5>
                   <h5>workshopSubmitionOpen: {item.workshopSubmitionOpen}</h5>
                   <h5>workshopSubmitionClose: {item.workshopSubmitionClose}</h5>
-                  <h5>status: {item.status}</h5>
+                  <h5 style={{color:"red"}}>status: {item.status}</h5>
 
                  
                 </div>
@@ -52,7 +52,7 @@ class Conferences extends Component{
               </div>
             ))}
           </div>
-        )
+          </div> )
       }
     }
 
