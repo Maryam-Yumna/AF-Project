@@ -1,6 +1,19 @@
 import React, {Component} from 'react';
 import jsPDF from "jspdf";
 import TemplateBack from 'url:../../public/images/templateBack.jpg'
+import onePage1 from 'url:../../public/images/Template1/onePage1.PNG'
+import onePage2 from 'url:../../public/images/Template1/onePage2.PNG'
+import twoPage1 from 'url:../../public/images/Template2/twoPage1.PNG'
+import twoPage2 from 'url:../../public/images/Template2/twoPage2.PNG'
+import twoPage3 from 'url:../../public/images/Template2/twoPage3.PNG'
+import twoPage4 from 'url:../../public/images/Template2/twoPage4.PNG'
+import twoPage5 from 'url:../../public/images/Template2/twoPage5.PNG'
+import threePage1 from 'url:../../public/images/Template3/threePage1.PNG'
+import threePage2 from 'url:../../public/images/Template3/threePage2.PNG'
+import threePage3 from 'url:../../public/images/Template3/threePage3.PNG'
+import threePage4 from 'url:../../public/images/Template3/threePage4.PNG'
+import threePage5 from 'url:../../public/images/Template3/threePage5.PNG'
+import threePage6 from 'url:../../public/images/Template3/threePage6.PNG'
 
 class Download extends Component {
 
@@ -8,10 +21,9 @@ class Download extends Component {
         //creating object of the package and pass the page type
         var doc = new jsPDF('landscape' , 'px' , 'a4' , 'false');
         //name , type , x-axis , y-axis , width , height
-        //doc.addImage(page , 'png' , 65 , 20 , 500 , 400);
-        //doc.addPage();
-        //doc.addImage(page2 , 'png' , 65 , 20 , 500 , 400);
-        doc.text('Workshop Template' , 120 , 410 );
+        doc.addImage(onePage1 , 'png' , 0 , 0 , 700 , 600);
+        doc.addPage();
+        doc.addImage(onePage2 , 'png' , 0 , 0 , 700 , 600);
         doc.save('Workshop Template.pdf');
 
     }
@@ -20,9 +32,15 @@ class Download extends Component {
         //creating object of the package and pass the page type
         var doc = new jsPDF('portrait' , 'px' , 'a4' , 'false');
         //name , type , x-axis , y-axis , width , height
-        //doc.addImage(pdfImage , 'png' , 65 , 20 , 500 , 400);
-        //doc.addPage();
-        doc.text('Academic Performance Research Paper' , 120 , 410 );
+        doc.addImage(twoPage1 , 'png' , 0 , 0 , 450 , 650);
+        doc.addPage();
+        doc.addImage(twoPage2 , 'png' , 0 , 0 , 450 , 650);
+        doc.addPage();
+        doc.addImage(twoPage3 , 'png' , 0 , 0 , 450 , 650);
+        doc.addPage();
+        doc.addImage(twoPage4 , 'png' , 0 , 0 , 450 , 650);
+        doc.addPage();
+        doc.addImage(twoPage5 , 'png' , 0 , 0 , 450 , 650);
         doc.save('Academic Performance Research Paper.pdf');
 
     }
@@ -31,9 +49,17 @@ class Download extends Component {
         //creating object of the package and pass the page type
         var doc = new jsPDF('portrait' , 'px' , 'a4' , 'false');
         //name , type , x-axis , y-axis , width , height
-        //doc.addImage(pdfImage , 'png' , 65 , 20 , 500 , 400);
-        //doc.addPage();
-        doc.text('Basic Academic Research Paper' , 120 , 410 );
+        doc.addImage(threePage1 , 'png' , 0 , 0 , 450 , 650);
+        doc.addPage();
+        doc.addImage(threePage2 , 'png' , 0 , 0 , 450 , 650);
+        doc.addPage();
+        doc.addImage(threePage3 , 'png' , 0 , 0 , 450 , 650);
+        doc.addPage();
+        doc.addImage(threePage4 , 'png' , 0 , 0 , 450 , 650);
+        doc.addPage();
+        doc.addImage(threePage5 , 'png' , 0 , 0 , 450 , 650);
+        doc.addPage();
+        doc.addImage(threePage6 , 'png' , 0 , 0 , 450 , 650);
         doc.save('Basic Academic Research Paper.pdf');
 
     }
