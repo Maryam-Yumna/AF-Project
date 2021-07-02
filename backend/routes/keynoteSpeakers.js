@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const { request } = require("express");
 const KeynoteSpeaker= require("../models/KeynoteSpeaker");
-
+const KeynoteSpeakerTemp = require('../models/KeynoteSpeakerTemp')
 
 router.route('/newKeynoteSpeaker').post((req, res)=> {
     const conference = req.body.conference;
@@ -52,6 +52,49 @@ router.route('/findByYear/:year').get(async(req, res)=>{
         res.status(200).send({keynoteSpeaker: keynoteSpeaker})
     }).catch((err)=>{
         res.status(500).send({status: "Error with get keynoteSpeaker", error:err.message});
+    })
+})
+
+
+//Insert accepted keynote speaker
+router.route("/").post((req,res) =>{
+    const keynoteName = req.body.keynoteName;
+    const organization = req.body.organization;
+    const description = req.body.description;
+    const status = req.body.status;
+
+    const KeySpeaker = new KeynoteSpeaker();
+
+    KeySpeaker.keynoteName = keynoteName;
+    KeySpeaker.organization = organization;
+    KeySpeaker.description = description;
+    KeySpeaker.status = status;
+
+    KeySpeaker.save().then(()=> {
+        res.json("KeynoteSpeaker updates inserted into keynoteSpeakerTemp")
+    }).catch((err)=>{
+        console.log(err)
+    });
+
+})
+
+
+//get accepted keynote speakers
+router.route("/accepted").get((req, res)=>{
+    KeynoteSpeaker.find().then((acceptedSpeaker)=>{
+        res.json(acceptedSpeaker)
+    }).catch((err)=>{
+        console.log(err)
+    })
+})
+
+
+//get the keynote by the id
+router.route("/:id").get((req, res)=>{
+    KeynoteSpeakerTemp.findById(req.params.id).then((oneKeySpeaker)=>{
+        res.json(oneKeySpeaker)
+    }).catch((err)=>{
+        console.log(err)
     })
 })
 module.exports = router;
