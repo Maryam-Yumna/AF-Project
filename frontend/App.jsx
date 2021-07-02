@@ -22,6 +22,12 @@ import Approveall from './components/AdminApprove/approveALL';
 import ApproveSingle from './components/AdminApprove/aprroveSingle';
 import AdminHome from './components/AdminHome/home';
 import Admin2Home from './components/AdminHome2/home';
+import AddKeynoteTemp from "./components/KeynoteSpeakers/ByEditor/AddKeynoteTemp";
+import ViewTempKeynotes from "./components/KeynoteSpeakers/ByAdmin/ViewTempKeynotes";
+import AddKeynote from "./components/KeynoteSpeakers/ByAdmin/AddKeynote";
+import KeynoteSpeakers from "./components/KeynoteSpeakers/ByClient/KeynoteSpeakers";
+import ViewKeynotes from "./components/KeynoteSpeakers/ByEditor/ViewKeynotes";
+import Download from "./components/Template/Download";
 // import uploadfiles from './components/uploadfiles';
 
 class App extends Component {
@@ -49,8 +55,14 @@ class App extends Component {
 
                     <Route path="/approveall" component={Approveall} />
                     <Route path="/approvesingle/:id" component={ApproveSingle} />
-                    
-                    
+
+                    <Route path = "/addKeynoteTemp"><AddKeynoteTemp/></Route>
+                    <Route path = "/viewTempKeynotes"><ViewTempKeynotes/></Route>
+                    <Route path = "/addAccepted"><AddKeynote/></Route>
+                    <Route path = "/keynoteSpeakers"><KeynoteSpeakers/></Route>
+                    <Route path = "/viewKeynotes"><ViewKeynotes/></Route>
+                    <Route path="/download" component={Download} />
+
                     <Route path="/login" exact component={Login}/>
                     
                 </Switch>
