@@ -66,6 +66,9 @@ class NavBar extends Component {
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/" activeclassname="active">WorkShops</Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/viewTempKeynotes" activeclassname="active">View Keynotes</Link>
+                                    </li>
                                 </ul>
                             ):this.state.user.userType === "editor"?(
                                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -80,6 +83,12 @@ class NavBar extends Component {
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/" activeclassname="active">WorkShops</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/addKeynoteTemp" activeclassname="active">Add Keynotes</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/viewKeynotes" activeclassname="active">View Keynotes</Link>
                                     </li>
                                 </ul>
                             ):this.state.user.userType === "reviewer"?(
@@ -137,6 +146,9 @@ class NavBar extends Component {
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/" activeclassname="active">WorkShops</Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/keynoteSpeakers" activeclassname="active">Keynotes</Link>
                                     </li>
                                 </ul>
                             )}
