@@ -1,0 +1,34 @@
+.form-control{
+   color:blue
+}
+
+.formCreate{
+   margin-top: 30px;
+   background-color: rgba(111, 116, 165, 0.734);
+   width: 1000px;
+   background-position: center;
+   margin-left: 20%;
+   
+}
+
+.btnprimary{
+   width:100% ;
+   background-color: rgba(58, 9, 148, 0.953);
+   height: auto;
+   border-radius: 5px;
+   height: 40px;
+   color: aliceblue;
+}
+#description{
+
+   font: bold;
+}
+
+.bodyt{
+   background-image: url("../../public/images/adminhome.jpg");
+  
+ 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}

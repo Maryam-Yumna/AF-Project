@@ -6,6 +6,8 @@ const dotenv = require("dotenv");
 const app = express();
 require("dotenv").config();
 var fs = require('fs');
+const conferenceAPI = require('./api/conference.api')
+const workshopRouter = require('./routes/workshops.js')
 
 const PORT = process.env.PORT || 8070;
 
@@ -35,7 +37,7 @@ const conferenceRouter = require('./routes/conferences.js');
 app.use('/conference', conferenceRouter);
 
 // http://localhost:8070/workshop
-const workshopRouter = require('./routes/workshops.js');
+
 app.use('/workshop', workshopRouter);
 
 const keynoteSpeakerRouter = require('./routes/keynoteSpeakers.js');
@@ -69,3 +71,9 @@ app.use('/uploads/images',express.static(path.join(__dirname, "uploads/images/")
 app.listen(PORT, () => {
     console.log(`server is up and running in port ${PORT}`);
 });
+app.use('/conferenceApi',conferenceAPI);
+
+// http://localhost:8070/workshop
+
+
+

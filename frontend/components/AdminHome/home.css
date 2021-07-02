@@ -1,0 +1,33 @@
+.block {
+    display: block;
+    width: 1000px;
+    height: 100px;
+    border: 1px;
+    border-color: aliceblue;
+    background-color: #b99fd3c7;
+    color: aliceblue;
+    padding: 14px ;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+  
+
+  }
+  .admin-body {
+    font-family: "Lato", sans-serif;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../../public/images/adminhome.jpg");
+    ;}
+
+    
+    
+
+ 

@@ -13,6 +13,15 @@ import WorkshopPresenter from './components/User/WorkshopPresenter';
 import Resercher from './components/User/Resercher';
 import Attendee from './components/User/Attendee';
 import Papers from './components/Reviewer/Papers';
+import Createconference from './components/Conference/createConference';
+import getconference from './components/Conference/conferences';
+import EditConference from './components/Conference/editSingle';
+
+
+import Approveall from './components/AdminApprove/approveALL';
+import ApproveSingle from './components/AdminApprove/aprroveSingle';
+import AdminHome from './components/AdminHome/home';
+import Admin2Home from './components/AdminHome2/home';
 // import uploadfiles from './components/uploadfiles';
 
 class App extends Component {
@@ -30,6 +39,17 @@ class App extends Component {
                     <Route path="/workshopPresenter" exact component={WorkshopPresenter}/>
                     <Route path="/resercher" exact component={Resercher}/>
                     <Route path="/attendee" exact component={Attendee}/>
+
+                    <Route path="/adminHome" component={AdminHome} exact/>
+                    <Route path="/admin2Home" component={Admin2Home} exact/>
+                    <Route path = "/createConference" component = {Createconference} ></Route>
+                    <Route path = "/Conferences" component = {getconference} ></Route>
+                    <Route path="/editConference/:id" component={EditConference} />
+
+
+                    <Route path="/approveall" component={Approveall} />
+                    <Route path="/approvesingle/:id" component={ApproveSingle} />
+                    
                     
                     <Route path="/login" exact component={Login}/>
                     
