@@ -139,7 +139,7 @@ class NavBar extends Component {
                                         <Link className="nav-link" aria-current="page" to="/" activeclassname="active">Home</Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/" activeclassname="active">Downloads</Link>
+                                        <Link className="nav-link" to="/download" activeclassname="active">Downloads</Link>
                                     </li>
                                     <li className="nav-item">
                                         <Link className="nav-link" to="/" activeclassname="active" >Researchers</Link>
