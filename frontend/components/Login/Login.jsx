@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import  { Redirect } from 'react-router-dom'
+import './login.css';
 
 const initialState ={
     password:'',
@@ -46,7 +46,7 @@ class Login extends Component {
                 }else if(userType === "editor"){
                     window.location.href = '/'
                 }else if(userType === "attendee"){
-                    window.location.href = '/'
+                    window.location.href = '/attendee'
                 }else if(userType === "workshop conductor"){
                     window.location.href = '/workshopPresenter'
                 }else if(userType === "resercher"){
@@ -59,40 +59,45 @@ class Login extends Component {
         })
         .catch(error=>{
             console.log(error.message)
-            alert(error.message);
+            // alert(error.message);
         })
     }
     render() {
         return (
-            <div className="container  w-25 p-3" style={{backgroundColor: '#ebe6e6', marginTop: '60px'}}>
-                <h1> Login </h1>
-                <form onSubmit={this.onSubmit}>
-                    <div className="mb-3">
-                        <label htmlFor="email" className="form-label">Email</label>
-                        <input 
-                            type="email" 
-                            className="form-control" 
-                            vale={this.state.email} 
-                            name ="email" 
-                            id="email"
-                            onChange={this.onChange}
-                            required
-                        />
+            <div className="loginContainer">
+                <div className="loginImage"></div>
+                <div className="" id="loginWrapper">
+                    <div className="loginForm">
+                        <h1 style={{textAlign:"center"}}> Login </h1>
+                        <form className="row g-3" onSubmit={this.onSubmit} >
+                            <div className="mb-3">
+                                <label htmlFor="email" className="form-label">Email</label>
+                                <input 
+                                    type="email" 
+                                    className="form-control" 
+                                    vale={this.state.email} 
+                                    name ="email" 
+                                    id="email"
+                                    onChange={this.onChange}
+                                    required
+                                />
+                            </div>
+                            <div className="mb-3">
+                                <label htmlFor="password" className="form-label">Password</label>
+                                <input 
+                                    type="password" 
+                                    className="form-control" 
+                                    vale={this.state.password} 
+                                    name ="password" 
+                                    id="password"
+                                    onChange={this.onChange}
+                                    required
+                                />
+                            </div>
+                            <button type="submit" className="btn btn-lg text-white" style={{backgroundColor:"#585c61"}}>Login</button>
+                        </form>
                     </div>
-                    <div className="mb-3">
-                        <label htmlFor="password" className="form-label">Password</label>
-                        <input 
-                            type="password" 
-                            className="form-control" 
-                            vale={this.state.password} 
-                            name ="password" 
-                            id="password"
-                            onChange={this.onChange}
-                            required
-                        />
-                    </div>
-                    <button type="submit" className="btn btn-primary">Login</button>
-                </form>
+                </div>
             </div>
         );
     }

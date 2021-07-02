@@ -1,0 +1,24 @@
+.background{
+    background-image: url("ReviewerBackground.051d54c6.png");
+    background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+/* .loginBackground{
+    background-image: url("../public/images/");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 10px 10px 10px;
+ } */
+
+ .loginImageContainer{
+    float: left;
+    background-image: url("login.48942d7a.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 10px 10px 10px 10px;
+
+ }
+/*# sourceMappingURL=index.cf495076.css.map */

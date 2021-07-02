@@ -44,8 +44,8 @@ class NavBar extends Component {
     }
     render() {
         return (
-            <div >
-               <nav className="navbar navbar-expand-lg navbar-dark bg-dark"style={{ position: 'fixed', width: '100%', top: '0'}}>
+            <div className="navbarWrapper">
+               <nav className="navbar navbar-expand-lg navbar-dark bg-dark"style={{ position: 'fixed', width: '100%', top: '0', zIndex:1}}>
                 <div className="container-fluid">
                     <Link className="navbar-brand" to="/">ICAF</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">

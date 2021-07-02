@@ -1,0 +1,19 @@
+.dashboardContainer{
+    background-image: url("../../public/images/background4.png");
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+#rwDashboard{
+    /* padding-top: 200px ; */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

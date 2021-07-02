@@ -21870,25 +21870,39 @@ var _attendee = require("./components/User/Attendee");
 var _attendeeDefault = parcelHelpers.interopDefault(_attendee);
 var _papers = require("./components/Reviewer/Papers");
 var _papersDefault = parcelHelpers.interopDefault(_papers);
+var _createConference = require("./components/Conference/createConference");
+var _createConferenceDefault = parcelHelpers.interopDefault(_createConference);
+var _conferences = require("./components/Conference/conferences");
+var _conferencesDefault = parcelHelpers.interopDefault(_conferences);
+var _editSingle = require("./components/Conference/editSingle");
+var _editSingleDefault = parcelHelpers.interopDefault(_editSingle);
+var _approveALL = require("./components/AdminApprove/approveALL");
+var _approveALLDefault = parcelHelpers.interopDefault(_approveALL);
+var _aprroveSingle = require("./components/AdminApprove/aprroveSingle");
+var _aprroveSingleDefault = parcelHelpers.interopDefault(_aprroveSingle);
+var _home1 = require("./components/AdminHome/home");
+var _homeDefault1 = parcelHelpers.interopDefault(_home1);
+var _home2 = require("./components/AdminHome2/home");
+var _homeDefault2 = parcelHelpers.interopDefault(_home2);
 // import uploadfiles from './components/uploadfiles';
 class App extends _react.Component {
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 21
+                lineNumber: 30
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_navBarDefault.default, {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 22
+                lineNumber: 31
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Switch, {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 23
+                lineNumber: 32
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21897,7 +21911,7 @@ class App extends _react.Component {
             component: _reviewerDashboardDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 24
+                lineNumber: 33
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21906,7 +21920,7 @@ class App extends _react.Component {
             component: _workshopDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 25
+                lineNumber: 34
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21915,7 +21929,7 @@ class App extends _react.Component {
             component: _papersDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 26
+                lineNumber: 35
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21924,7 +21938,7 @@ class App extends _react.Component {
             component: _homeDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 27
+                lineNumber: 36
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21933,7 +21947,7 @@ class App extends _react.Component {
             component: _registerDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 28
+                lineNumber: 37
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21942,7 +21956,7 @@ class App extends _react.Component {
             component: _paymentFormDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 29
+                lineNumber: 38
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21951,7 +21965,7 @@ class App extends _react.Component {
             component: _workshopPresenterDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 30
+                lineNumber: 39
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21960,7 +21974,7 @@ class App extends _react.Component {
             component: _resercherDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 31
+                lineNumber: 40
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21969,7 +21983,65 @@ class App extends _react.Component {
             component: _attendeeDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 32
+                lineNumber: 41
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/adminHome",
+            component: _homeDefault1.default,
+            exact: true,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
+                lineNumber: 43
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/admin2Home",
+            component: _homeDefault2.default,
+            exact: true,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
+                lineNumber: 44
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/createConference",
+            component: _createConferenceDefault.default,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
+                lineNumber: 45
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/Conferences",
+            component: _conferencesDefault.default,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
+                lineNumber: 46
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/editConference/:id",
+            component: _editSingleDefault.default,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
+                lineNumber: 47
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/approveall",
+            component: _approveALLDefault.default,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
+                lineNumber: 50
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+            path: "/approvesingle/:id",
+            component: _aprroveSingleDefault.default,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
+                lineNumber: 51
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21978,7 +22050,7 @@ class App extends _react.Component {
             component: _loginDefault.default,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\App.jsx",
-                lineNumber: 34
+                lineNumber: 54
             },
             __self: this
         }))));
@@ -21991,7 +22063,7 @@ exports.default = App;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-router-dom":"1PMSK","./components/Home":"1Baw2","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/Reviewer/ReviewerDashboard":"4O8CW","./components/Reviewer/Workshop":"7xdwJ","./components/Login/Register":"52NPx","./components/Footer/Footer":"L0Uct","./components/PaymentForm/PaymentForm":"SPKOV","./components/Login/Login":"2UjJb","./components/User/WorkshopPresenter":"3T2oN","./components/NavBar":"5vDPx","./components/User/Resercher":"KGvpf","./components/User/Attendee":"X3st6","./components/Reviewer/Papers":"674iF"}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","./components/Home":"1Baw2","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","./node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./components/Reviewer/ReviewerDashboard":"4O8CW","./components/Reviewer/Workshop":"7xdwJ","./components/Login/Register":"52NPx","./components/Footer/Footer":"L0Uct","./components/PaymentForm/PaymentForm":"SPKOV","./components/Login/Login":"2UjJb","./components/User/WorkshopPresenter":"3T2oN","./components/NavBar":"5vDPx","./components/User/Resercher":"KGvpf","./components/User/Attendee":"X3st6","./components/Reviewer/Papers":"674iF","./components/Conference/createConference":"775o9","./components/Conference/conferences":"4IDgW","./components/Conference/editSingle":"2ffx6","./components/AdminApprove/approveALL":"1UZk6","./components/AdminApprove/aprroveSingle":"3y0fy","./components/AdminHome/home":"7KVrI","./components/AdminHome2/home":"1PfpK"}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -25084,19 +25156,31 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 // import Background from 'url:../public/images/BackgroundHomeImage.png';
 var _background2Png = require("url:../public/images/background2.png");
 var _background2PngDefault = parcelHelpers.interopDefault(_background2Png);
+var _imagesJpg = require("url:../public/images/images.jpg");
+var _imagesJpgDefault = parcelHelpers.interopDefault(_imagesJpg);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRouterDom = require("react-router-dom");
 class Home extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            conferences: []
+        };
+    }
+    componentDidMount() {
+        _axiosDefault.default.get('http://localhost:8070/conferenceAPi/getaproved').then((response)=>{
+            this.setState({
+                conferences: response.data.data
+            });
+        });
+    }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
-                lineNumber: 8
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "backgroundImage",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
-                lineNumber: 9
+                lineNumber: 31
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
@@ -25106,10 +25190,238 @@ class Home extends _react.Component {
             },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
-                lineNumber: 10
+                lineNumber: 33
             },
             __self: this
-        }))));
+        }), /*#__PURE__*/ _reactDefault.default.createElement("center", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 36
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            class: "card-img-top",
+            src: "https://www.cosl.lk/images/slidernew/slider-3.jpg",
+            alt: "Card image cap",
+            style: {
+                width: '50%',
+                height: '50%'
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 37
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            class: "card-img-top",
+            src: "https://cmb.ac.lk/wp-content/uploads/icdm23-409x258.jpg",
+            alt: "Card image cap",
+            style: {
+                width: '50%',
+                height: '50%'
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 38
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "card-body",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 40
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            class: "card-title",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 41
+            },
+            __self: this
+        }, "WELCOME TO CONVENTION"), /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+            class: "card-title",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 42
+            },
+            __self: this
+        }, "BIGGEST DEVELOPER CONFERENCE 2020"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+            class: "card-text",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 43
+            },
+            __self: this
+        }, "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia."), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: "#",
+            class: "btn btn-primary",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 44
+            },
+            __self: this
+        }, "check here")), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            style: {
+                color: "#272554"
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                lineNumber: 51
+            },
+            __self: this
+        }, "Conferences this year"), this.state.conferences.length > 0 && this.state.conferences.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+                key: index,
+                className: "card mb-3",
+                src: _background2PngDefault.default,
+                style: {
+                },
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 53
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                className: "p-3",
+                onClick: (e)=>this.navigateSubjectPage(e, item._id)
+                ,
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 54
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("center", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 56
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("table", {
+                id: "cust",
+                style: {
+                    width: '70%'
+                },
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 57
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
+                src: _imagesJpgDefault.default,
+                style: {
+                    width: '400px'
+                },
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 59
+                },
+                __self: this
+            }), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 60
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                rowspan: "2",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 62
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 62
+                },
+                __self: this
+            }, item.confName))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 66
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 68
+                },
+                __self: this
+            }, item.year)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 71
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                rowspan: "2",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 73
+                },
+                __self: this
+            }, item.description)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 76
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 78
+                },
+                __self: this
+            }, item.startingDate, " to ", item.endDate, " ")), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 82
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 84
+                },
+                __self: this
+            }, "At", item.venue)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 87
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 89
+                },
+                __self: this
+            }, " ", /*#__PURE__*/ _reactDefault.default.createElement("lable", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 89
+                },
+                __self: this
+            }, "Registration Open from :", item.RegistrationOpen, " to ", item.RegistrationClosed), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 90
+                },
+                __self: this
+            }, " ", /*#__PURE__*/ _reactDefault.default.createElement("lable", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 90
+                },
+                __self: this
+            }, "Paper SubmitionOpen :", item.paperSubmitionOpen, " to ", item.workshopSubmitionClose)), /*#__PURE__*/ _reactDefault.default.createElement("lable", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Home.jsx",
+                    lineNumber: 91
+                },
+                __self: this
+            }, "workshop Submition Open :", item.workshopSubmitionOpen, " to ", item.workshopSubmitionClose)))))))
+        )));
     }
 }
 exports.default = Home;
@@ -25119,7 +25431,7 @@ exports.default = Home;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","url:../public/images/background2.png":"7HxCf"}],"367CR":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","url:../public/images/background2.png":"7HxCf","url:../public/images/images.jpg":"5TKz8","axios":"7rA65","react-router-dom":"1PMSK"}],"367CR":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -25302,397 +25614,10 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"4O8CW":[function(require,module,exports) {
-var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
+},{}],"5TKz8":[function(require,module,exports) {
+module.exports = require('./bundle-url').getBundleURL() + "images.f8db6ca4.jpg";
 
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _workshopsPng = require("url:../../public/images/Workshops.png");
-var _workshopsPngDefault = parcelHelpers.interopDefault(_workshopsPng);
-var _researchPapersPng = require("url:../../public/images/ResearchPapers.png");
-var _researchPapersPngDefault = parcelHelpers.interopDefault(_researchPapersPng);
-var _buttonCard = require("../Cards/ButtonCard");
-var _buttonCardDefault = parcelHelpers.interopDefault(_buttonCard);
-class ReviewerDashboard extends _react.Component {
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "container-sm",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\ReviewerDashboard.jsx",
-                lineNumber: 10
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "d-flex justify-content-sm-center",
-            style: {
-                marginTop: '100px'
-            },
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\ReviewerDashboard.jsx",
-                lineNumber: 11
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_buttonCardDefault.default, {
-            title: "Research Paper Uploads",
-            path: "/papers/pending",
-            image: _researchPapersPngDefault.default,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\ReviewerDashboard.jsx",
-                lineNumber: 12
-            },
-            __self: this
-        }), /*#__PURE__*/ _reactDefault.default.createElement(_buttonCardDefault.default, {
-            title: "Workshop Uploads",
-            path: "/workshop/pending",
-            image: _workshopsPngDefault.default,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\ReviewerDashboard.jsx",
-                lineNumber: 13
-            },
-            __self: this
-        }))));
-    }
-}
-exports.default = ReviewerDashboard;
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","url:../../public/images/Workshops.png":"6YMW0","url:../../public/images/ResearchPapers.png":"2o1w5","../Cards/ButtonCard":"NhCxM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6YMW0":[function(require,module,exports) {
-module.exports = require('./bundle-url').getBundleURL() + "Workshops.01c4e471.png";
-
-},{"./bundle-url":"3seVR"}],"2o1w5":[function(require,module,exports) {
-module.exports = require('./bundle-url').getBundleURL() + "ResearchPapers.e91d2a3e.png";
-
-},{"./bundle-url":"3seVR"}],"NhCxM":[function(require,module,exports) {
-var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-class ButtonCard extends _react.Component {
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "btn-group me-4",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
-                lineNumber: 7
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
-            class: "btn btn-secondary btn-lg",
-            style: {
-                margin: '10px'
-            },
-            to: this.props.path,
-            style: {
-                width: '100%',
-                height: '100%'
-            },
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
-                lineNumber: 8
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "row",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
-                lineNumber: 9
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
-                lineNumber: 10
-            },
-            __self: this
-        }, this.props.title)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "row",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
-                lineNumber: 12
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
-            src: this.props.image,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
-                lineNumber: 13
-            },
-            __self: this
-        })))));
-    }
-}
-exports.default = ButtonCard;
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7xdwJ":[function(require,module,exports) {
-var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-class Workshop extends _react.Component {
-    constructor(){
-        super();
-        this.state = {
-            uploads: [],
-            message: ''
-        };
-        this.getPendingWorkshops = this.getPendingWorkshops.bind(this);
-    }
-    componentDidMount() {
-        this.getPendingWorkshops();
-    }
-    getPendingWorkshops() {
-        let status = "pending";
-        _axiosDefault.default.get('http://localhost:8070/workshopUpload/' + status).then((data)=>{
-            this.setState({
-                uploads: data.data
-            }, ()=>{
-                console.log(this.state.uploads);
-            });
-            console.log(data.data);
-        }).catch((err)=>{
-            console.error(err);
-        });
-    }
-    updateApproval = (id, approval)=>{
-        let workshop = {
-            id: id,
-            approval: approval
-        };
-        _axiosDefault.default.put('http://localhost:8070/workshopUpload/updateApproval', workshop).then((response)=>{
-            this.setState({
-                message: response.message
-            });
-            this.getPendingWorkshops();
-        }).catch((err)=>{
-            console.error(err);
-        });
-    };
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-75 p-3 text-center",
-            style: {
-                backgroundColor: '#ebe6e6',
-                marginTop: '60px'
-            },
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 55
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 56
-            },
-            __self: this
-        }, "Pending Workshop proposals"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-75 p-3 ",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 57
-            },
-            __self: this
-        }, this.state.uploads.length != 0 ? /*#__PURE__*/ _reactDefault.default.createElement("table", {
-            className: "table",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 59
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 60
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 61
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
-            id: "file",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 62
-            },
-            __self: this
-        }, "file"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
-            id: "user",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 63
-            },
-            __self: this
-        }, "User"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
-            id: "name",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 64
-            },
-            __self: this
-        }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
-            id: "uploadDate",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 65
-            },
-            __self: this
-        }, "Upload Date"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
-            id: "approve",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 66
-            },
-            __self: this
-        }, "Approve"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
-            id: "reject",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 67
-            },
-            __self: this
-        }, "Reject"))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 70
-            },
-            __self: this
-        }, this.state.uploads.map((workshop)=>{
-            return(/*#__PURE__*/ _reactDefault.default.createElement("tr", {
-                key: workshop._id,
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 73
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
-                scope: "row",
-                id: "trfile",
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 74
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-                href: `http://localhost:8070/${workshop.filePath}`,
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 75
-                },
-                __self: this
-            }, workshop.title)), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-                id: "trSize",
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 77
-                },
-                __self: this
-            }, workshop.fileSize), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-                id: "trName",
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 78
-                },
-                __self: this
-            }, workshop.user.name), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-                id: "trUploadDate",
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 79
-                },
-                __self: this
-            }, workshop.uploadDate), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-                id: "trApprove",
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 80
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
-                id: "btnApprove",
-                type: "button",
-                className: "btn btn-success",
-                onClick: ()=>this.updateApproval(workshop._id, 'approved')
-                ,
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 80
-                },
-                __self: this
-            }, "Approve")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-                id: "trRreject",
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 81
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
-                id: "btnReject",
-                type: "button",
-                className: "btn btn-danger",
-                onClick: ()=>this.updateApproval(workshop._id, 'rejected')
-                ,
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                    lineNumber: 81
-                },
-                __self: this
-            }, "Reject"))));
-        }))) : /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
-                lineNumber: 88
-            },
-            __self: this
-        }))));
-    }
-}
-exports.default = Workshop;
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7rA65":[function(require,module,exports) {
+},{"./bundle-url":"3seVR"}],"7rA65":[function(require,module,exports) {
 module.exports = require('./lib/axios');
 
 },{"./lib/axios":"4qfhW"}],"4qfhW":[function(require,module,exports) {
@@ -27058,7 +26983,150 @@ module.exports = CancelToken;
     return typeof payload === 'object' && payload.isAxiosError === true;
 };
 
-},{}],"52NPx":[function(require,module,exports) {
+},{}],"4O8CW":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _workshopsPng = require("url:../../public/images/Workshops.png");
+var _workshopsPngDefault = parcelHelpers.interopDefault(_workshopsPng);
+var _researchPapersPng = require("url:../../public/images/ResearchPapers.png");
+var _researchPapersPngDefault = parcelHelpers.interopDefault(_researchPapersPng);
+var _buttonCard = require("../Cards/ButtonCard");
+var _buttonCardDefault = parcelHelpers.interopDefault(_buttonCard);
+var _dashboardCss = require("./dashboard.css");
+class ReviewerDashboard extends _react.Component {
+    render() {
+        return(// <div class="container-sm" >
+        /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "dashboardContainer",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\ReviewerDashboard.jsx",
+                lineNumber: 12
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "d-flex justify-content-sm-center",
+            id: "rwDashboard",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\ReviewerDashboard.jsx",
+                lineNumber: 13
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_buttonCardDefault.default, {
+            title: "Research Paper Uploads",
+            path: "/papers/pending",
+            image: _researchPapersPngDefault.default,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\ReviewerDashboard.jsx",
+                lineNumber: 15
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement(_buttonCardDefault.default, {
+            title: "Workshop Uploads",
+            path: "/workshop/pending",
+            image: _workshopsPngDefault.default,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\ReviewerDashboard.jsx",
+                lineNumber: 16
+            },
+            __self: this
+        }))));
+    }
+}
+exports.default = ReviewerDashboard;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","url:../../public/images/Workshops.png":"6YMW0","url:../../public/images/ResearchPapers.png":"2o1w5","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../Cards/ButtonCard":"NhCxM","./dashboard.css":"4FRCu"}],"6YMW0":[function(require,module,exports) {
+module.exports = require('./bundle-url').getBundleURL() + "Workshops.01c4e471.png";
+
+},{"./bundle-url":"3seVR"}],"2o1w5":[function(require,module,exports) {
+module.exports = require('./bundle-url').getBundleURL() + "ResearchPapers.e91d2a3e.png";
+
+},{"./bundle-url":"3seVR"}],"NhCxM":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+class ButtonCard extends _react.Component {
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "btn-group me-4",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
+                lineNumber: 7
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            class: "btn btn-secondary btn-lg",
+            style: {
+                margin: '10px'
+            },
+            to: this.props.path,
+            style: {
+                width: '100%',
+                height: '100%'
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
+                lineNumber: 8
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "row",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
+                lineNumber: 9
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
+                lineNumber: 10
+            },
+            __self: this
+        }, this.props.title)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "row",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
+                lineNumber: 12
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("img", {
+            src: this.props.image,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Cards\\ButtonCard.jsx",
+                lineNumber: 13
+            },
+            __self: this
+        })))));
+    }
+}
+exports.default = ButtonCard;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4FRCu":[function() {},{}],"7xdwJ":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27071,8 +27139,267 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _paymentForm = require("../PaymentForm/PaymentForm");
-var _paymentFormDefault = parcelHelpers.interopDefault(_paymentForm);
+var _uploadsCss = require("./uploads.css");
+var _bootstrapIconsCss = require("bootstrap-icons/font/bootstrap-icons.css");
+class Workshop extends _react.Component {
+    constructor(){
+        super();
+        this.state = {
+            uploads: [],
+            message: ''
+        };
+        this.getPendingWorkshops = this.getPendingWorkshops.bind(this);
+    }
+    componentDidMount() {
+        this.getPendingWorkshops();
+    }
+    getPendingWorkshops() {
+        let status = "pending";
+        _axiosDefault.default.get('http://localhost:8070/workshopUpload/' + status).then((data)=>{
+            this.setState({
+                uploads: data.data
+            }, ()=>{
+                console.log(this.state.uploads);
+            });
+            console.log(data.data);
+        }).catch((err)=>{
+            console.error(err);
+        });
+    }
+    updateApproval = (id, approval)=>{
+        let workshop = {
+            id: id,
+            approval: approval
+        };
+        _axiosDefault.default.put('http://localhost:8070/workshopUpload/updateApproval', workshop).then((response)=>{
+            this.setState({
+                message: response.message
+            });
+            this.getPendingWorkshops();
+        }).catch((err)=>{
+            console.error(err);
+        });
+    };
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "uploadBackground",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 58
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container w-75 p-3 text-center",
+            id: "uploads",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 59
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 60
+            },
+            __self: this
+        }, "Pending Workshop proposals"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container w-75 p-3 ",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 61
+            },
+            __self: this
+        }, this.state.uploads.length != 0 ? /*#__PURE__*/ _reactDefault.default.createElement("table", {
+            className: "table table-dark table-striped table-hover",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 63
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 64
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 65
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+            scope: "col",
+            id: "file",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 66
+            },
+            __self: this
+        }, "file"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+            scope: "col",
+            id: "name",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 67
+            },
+            __self: this
+        }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+            scope: "col",
+            id: "email",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 68
+            },
+            __self: this
+        }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+            scope: "col",
+            id: "uploadDate",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 69
+            },
+            __self: this
+        }, "Upload Date"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+            scope: "col",
+            id: "approve",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 70
+            },
+            __self: this
+        }, "Approve"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+            scope: "col",
+            id: "reject",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 71
+            },
+            __self: this
+        }, "Reject"))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 74
+            },
+            __self: this
+        }, this.state.uploads.map((workshop)=>{
+            return(/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                key: workshop._id,
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 77
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+                scope: "row",
+                id: "trfile",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 78
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
+                class: "bi bi-file-earmark-pdf",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 79
+                },
+                __self: this
+            }), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+                href: `http://localhost:8070/${workshop.filePath}`,
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 80
+                },
+                __self: this
+            }, workshop.title)), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                id: "trName",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 82
+                },
+                __self: this
+            }, workshop.user.name), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                id: "trEmail",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 83
+                },
+                __self: this
+            }, workshop.user.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                id: "trUploadDate",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 84
+                },
+                __self: this
+            }, workshop.uploadDate), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                id: "trApprove",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 85
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+                id: "btnApprove",
+                type: "button",
+                className: "btn btn-success",
+                onClick: ()=>this.updateApproval(workshop._id, 'approved')
+                ,
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 85
+                },
+                __self: this
+            }, "Approve")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                id: "trRreject",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 86
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+                id: "btnReject",
+                type: "button",
+                className: "btn btn-danger",
+                onClick: ()=>this.updateApproval(workshop._id, 'rejected')
+                ,
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                    lineNumber: 86
+                },
+                __self: this
+            }, "Reject"))));
+        }))) : /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Workshop.jsx",
+                lineNumber: 93
+            },
+            __self: this
+        })))));
+    }
+}
+exports.default = Workshop;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./uploads.css":"28J5v","bootstrap-icons/font/bootstrap-icons.css":"56BW9"}],"28J5v":[function() {},{}],"56BW9":[function() {},{}],"52NPx":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _registerCss = require("./register.css");
 const initialState = {
     name: '',
     password: '',
@@ -27123,7 +27450,6 @@ class Register extends _react.Component {
         formData.append('file', this.state.file);
         formData.append('title', this.state.title);
         _axiosDefault.default.post('http://localhost:8070/user/register', User).then((response)=>{
-            alert('Data Successfully inserted');
             localStorage.setItem('token', response.data.token);
             if (this.state.type === "resercher") return _axiosDefault.default.post('http://localhost:8070/paperUpload/newPaperUpload', formData, {
                 headers: {
@@ -27135,15 +27461,11 @@ class Register extends _react.Component {
                     'authorization': response.data.token
                 }
             });
-            else this.props.history.push("/attendee");
+            else window.location.href = '/attendee';
         }).then((response)=>{
-            if (this.state.type === "resercher") {
-                alert('Your Paper has been submitted');
-                this.props.history.push("/resercher");
-            } else if (this.state.type === "workshop conductor") {
-                alert('Your workshop proposal has been submitted');
-                this.props.history.push("/workshopPresenter");
-            } else this.props.history.push("/attendee");
+            if (this.state.type === "resercher") window.location.href = '/resercher';
+            else if (this.state.type === "workshop conductor") window.location.href = '/workshopPresenter';
+            else this.props.history.push("/attendee");
         }).catch((error)=>{
             console.log(error.message);
             alert(error.message);
@@ -27151,34 +27473,45 @@ class Register extends _react.Component {
     }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-25 p-3",
-            style: {
-                backgroundColor: '#ebe6e6',
-                marginTop: '60px'
-            },
+            className: "registernContainer",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 101
+                lineNumber: 98
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "registerImage",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
+                lineNumber: 99
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "registerWrapper",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
+                lineNumber: 100
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 102
+                lineNumber: 101
             },
             __self: this
         }, " Register"), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            className: "row g-3",
             onSubmit: this.onSubmit,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 103
+                lineNumber: 102
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
+            className: "colmb-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 104
+                lineNumber: 103
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27186,7 +27519,7 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 105
+                lineNumber: 104
             },
             __self: this
         }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27199,14 +27532,14 @@ class Register extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 106
+                lineNumber: 105
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
+            className: "col-md-6",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 116
+                lineNumber: 115
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27214,7 +27547,7 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 117
+                lineNumber: 116
             },
             __self: this
         }, "Username"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27227,14 +27560,14 @@ class Register extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 118
+                lineNumber: 117
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
+            className: "col-md-6",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 128
+                lineNumber: 127
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27242,7 +27575,7 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 129
+                lineNumber: 128
             },
             __self: this
         }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27255,14 +27588,14 @@ class Register extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 130
+                lineNumber: 129
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
+            className: "col-md-6",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 140
+                lineNumber: 139
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27270,7 +27603,7 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 141
+                lineNumber: 140
             },
             __self: this
         }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27283,14 +27616,14 @@ class Register extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 142
+                lineNumber: 141
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
+            className: "col-md-6",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 152
+                lineNumber: 151
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27298,7 +27631,7 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 153
+                lineNumber: 152
             },
             __self: this
         }, "Phone"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27311,14 +27644,14 @@ class Register extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 154
+                lineNumber: 153
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mb-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 164
+                lineNumber: 163
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27326,14 +27659,14 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 165
+                lineNumber: 164
             },
             __self: this
         }, "User Type"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "form-check",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 166
+                lineNumber: 165
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27345,7 +27678,7 @@ class Register extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 167
+                lineNumber: 166
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27353,14 +27686,14 @@ class Register extends _react.Component {
             htmlFor: "resercher",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 168
+                lineNumber: 167
             },
             __self: this
         }, "Researcher")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "form-check",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 172
+                lineNumber: 171
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27372,7 +27705,7 @@ class Register extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 173
+                lineNumber: 172
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27380,14 +27713,14 @@ class Register extends _react.Component {
             htmlFor: "workshopConductor",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 174
+                lineNumber: 173
             },
             __self: this
         }, "Workshop Condutor")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "form-check",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 178
+                lineNumber: 177
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27399,7 +27732,7 @@ class Register extends _react.Component {
             onChange: this.onChange,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 179
+                lineNumber: 178
             },
             __self: this
         }), /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27407,21 +27740,21 @@ class Register extends _react.Component {
             htmlFor: "attendee",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 180
+                lineNumber: 179
             },
             __self: this
         }, "Attendee"))), this.state.type === "resercher" ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mb-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 186
+                lineNumber: 185
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mb-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 187
+                lineNumber: 186
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27429,7 +27762,7 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 188
+                lineNumber: 187
             },
             __self: this
         }, "Reserch Paper Title"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27442,14 +27775,14 @@ class Register extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 189
+                lineNumber: 188
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mb-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 199
+                lineNumber: 198
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27457,7 +27790,7 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 200
+                lineNumber: 199
             },
             __self: this
         }, "Upload Reserch Paper"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27468,20 +27801,20 @@ class Register extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 201
+                lineNumber: 200
             },
             __self: this
         }))) : this.state.type === "workshop conductor" ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 211
+                lineNumber: 210
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mb-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 212
+                lineNumber: 211
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27489,7 +27822,7 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 213
+                lineNumber: 212
             },
             __self: this
         }, "Workshop Title"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27502,14 +27835,14 @@ class Register extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 214
+                lineNumber: 213
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mb-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 224
+                lineNumber: 223
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27517,7 +27850,7 @@ class Register extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 225
+                lineNumber: 224
             },
             __self: this
         }, "Upload Workshop Proposal"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27528,32 +27861,38 @@ class Register extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 226
+                lineNumber: 225
             },
             __self: this
         }))) : this.state.type === "attendee" ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 237
+                lineNumber: 236
             },
             __self: this
-        }) : null, this.state.type === "resercher" || this.state.type === "workshop conductor" ? /*#__PURE__*/ _reactDefault.default.createElement("button", {
+        }) : null, this.state.type === "resercher" || this.state.type === "workshop conductor" || this.state.type === "" ? /*#__PURE__*/ _reactDefault.default.createElement("button", {
             type: "submit",
-            className: "btn btn-primary",
+            className: "btn btn-lg text-white",
+            style: {
+                backgroundColor: "#585c61"
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
+                lineNumber: 241
+            },
+            __self: this
+        }, "Register") : /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "submit",
+            className: "btn btn-lg text-white",
+            style: {
+                backgroundColor: "#585c61"
+            },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
                 lineNumber: 242
             },
             __self: this
-        }, "Register") : /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            type: "submit",
-            className: "btn btn-primary",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Register.jsx",
-                lineNumber: 243
-            },
-            __self: this
-        }, "Pay Now "))));
+        }, "Pay Now ")))));
     }
 }
 exports.default = Register;
@@ -27563,274 +27902,7 @@ exports.default = Register;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../PaymentForm/PaymentForm":"SPKOV"}],"SPKOV":[function(require,module,exports) {
-var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-const initialState = {
-    firstName: '',
-    lastName: '',
-    cardNumber: '',
-    cvc: '',
-    cardExpDate: '',
-    user: {
-    }
-};
-class PaymentForm extends _react.Component {
-    constructor(props){
-        super(props);
-        this.state = initialState;
-        this.onChange = this.onChange.bind(this);
-        this.onSubmit = this.onSubmit.bind(this);
-    }
-    onSubmit(e) {
-        e.preventDefault();
-        let Payment = {
-            amount: this.props.amount,
-            firstName: this.state.firstName,
-            cardNumber: this.state.cardNumber,
-            lastName: this.state.lastName,
-            cvc: this.state.cvc,
-            cardExpDate: this.state.cardExpDate,
-            paymentType: this.props.userType
-        };
-        console.log(Payment);
-        let token = localStorage.getItem("token");
-        _axiosDefault.default.post('http://localhost:8070/payment/newPayment', Payment, {
-            headers: {
-                'authorization': token
-            }
-        }).then((response)=>{
-            alert('Payment is succesfull');
-            this.props.updatePaymentStatus();
-        }).catch((error)=>{
-            console.log(error.message);
-            alert(error.message);
-        });
-    }
-    onChange(e) {
-        this.setState({
-            [e.target.name]: e.target.value
-        });
-    }
-    componentDidMount() {
-    }
-    render() {
-        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container  p-3",
-            style: {
-                backgroundColor: '#ebe6e6',
-                marginTop: '60px'
-            },
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 62
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("form", {
-            class: "row g-3",
-            onSubmit: this.onSubmit,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 63
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-12",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 64
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "amount",
-            class: "form-label",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 65
-            },
-            __self: this
-        }, "Amount"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "number",
-            class: "form-control",
-            id: "amount",
-            name: "amount",
-            value: this.props.amount,
-            disabled: true,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 66
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-6",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 75
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "firstName",
-            class: "form-label",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 76
-            },
-            __self: this
-        }, "First Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            class: "form-control",
-            id: "firstName",
-            name: "firstName",
-            value: this.state.firstName,
-            onChange: this.onChange,
-            required: true,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 77
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-6",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 87
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "lastName",
-            class: "form-label",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 88
-            },
-            __self: this
-        }, "Last Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            class: "form-control",
-            id: "lastName",
-            name: "lastName",
-            value: this.state.lastName,
-            onChange: this.onChange,
-            required: true,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 89
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-6",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 99
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "cardNumber",
-            class: "form-label",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 100
-            },
-            __self: this
-        }, "Credit Card Number"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "text",
-            class: "form-control",
-            id: "cardNumber",
-            name: "cardNumber",
-            value: this.state.cardNumber,
-            onChange: this.onChange,
-            required: true,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 101
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-6",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 111
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "cvc",
-            class: "form-label",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 112
-            },
-            __self: this
-        }, "Security Code"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "number",
-            class: "form-control",
-            id: "cvc",
-            placeholder: "CVC",
-            name: "cvc",
-            value: this.state.cvc,
-            onChange: this.onChange,
-            required: true,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 113
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            class: "col-md-6",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 124
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
-            for: "cardExp",
-            class: "form-label",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 125
-            },
-            __self: this
-        }, "Card Expiration Date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-            type: "date",
-            class: "form-control",
-            id: "cardExp",
-            name: "cardExpDate",
-            value: this.state.cardExpDate,
-            onChange: this.onChange,
-            required: true,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 126
-            },
-            __self: this
-        })), /*#__PURE__*/ _reactDefault.default.createElement("button", {
-            type: "submit",
-            className: "btn btn-primary",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
-                lineNumber: 136
-            },
-            __self: this
-        }, "Submit"))));
-    }
-}
-exports.default = PaymentForm;
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"L0Uct":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./register.css":"1rdWp"}],"1rdWp":[function() {},{}],"L0Uct":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27892,7 +27964,7 @@ exports.default = Footer;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}],"2UjJb":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}],"SPKOV":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27905,7 +27977,278 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _reactRouterDom = require("react-router-dom");
+// import './payment.css'
+const initialState = {
+    firstName: '',
+    lastName: '',
+    cardNumber: '',
+    cvc: '',
+    cardExpDate: '',
+    user: {
+    }
+};
+class PaymentForm extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = initialState;
+        this.onChange = this.onChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+    }
+    onSubmit(e) {
+        e.preventDefault();
+        let Payment = {
+            amount: this.props.amount,
+            firstName: this.state.firstName,
+            cardNumber: this.state.cardNumber,
+            lastName: this.state.lastName,
+            cvc: this.state.cvc,
+            cardExpDate: this.state.cardExpDate,
+            paymentType: this.props.userType
+        };
+        console.log(Payment);
+        let token = localStorage.getItem("token");
+        _axiosDefault.default.post('http://localhost:8070/payment/newPayment', Payment, {
+            headers: {
+                'authorization': token
+            }
+        }).then((response)=>{
+            this.props.updatePaymentStatus();
+        }).catch((error)=>{
+            console.log(error.message);
+            alert(error.message);
+        });
+    }
+    onChange(e) {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
+    }
+    componentDidMount() {
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 62
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 64
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            class: "row g-3 text-start",
+            onSubmit: this.onSubmit,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 66
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "col-md-12",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 67
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "amount",
+            class: "form-label",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 68
+            },
+            __self: this
+        }, "Amount"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "number",
+            class: "form-control",
+            id: "amount",
+            name: "amount",
+            value: this.props.amount,
+            disabled: true,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 69
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 78
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "firstName",
+            class: "form-label",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 79
+            },
+            __self: this
+        }, "First Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            id: "firstName",
+            name: "firstName",
+            value: this.state.firstName,
+            onChange: this.onChange,
+            required: true,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 80
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 90
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "lastName",
+            class: "form-label",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 91
+            },
+            __self: this
+        }, "Last Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            id: "lastName",
+            name: "lastName",
+            value: this.state.lastName,
+            onChange: this.onChange,
+            required: true,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 92
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 102
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "cardNumber",
+            class: "form-label",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 103
+            },
+            __self: this
+        }, "Credit Card Number"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "text",
+            class: "form-control",
+            id: "cardNumber",
+            name: "cardNumber",
+            value: this.state.cardNumber,
+            onChange: this.onChange,
+            required: true,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 104
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 114
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "cvc",
+            class: "form-label",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 115
+            },
+            __self: this
+        }, "Security Code"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "number",
+            class: "form-control",
+            id: "cvc",
+            placeholder: "CVC",
+            name: "cvc",
+            value: this.state.cvc,
+            onChange: this.onChange,
+            required: true,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 116
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "col-md-6",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 127
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            for: "cardExp",
+            class: "form-label",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 128
+            },
+            __self: this
+        }, "Card Expiration Date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+            type: "date",
+            class: "form-control",
+            id: "cardExp",
+            name: "cardExpDate",
+            value: this.state.cardExpDate,
+            onChange: this.onChange,
+            required: true,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 129
+            },
+            __self: this
+        })), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "submit",
+            className: "btn btn-lg text-white",
+            style: {
+                backgroundColor: "#585c61"
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\PaymentForm\\PaymentForm.jsx",
+                lineNumber: 139
+            },
+            __self: this
+        }, "Submit")))));
+    }
+}
+exports.default = PaymentForm;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2UjJb":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _loginCss = require("./login.css");
 const initialState = {
     password: '',
     email: '',
@@ -27938,7 +28281,7 @@ class Login extends _react.Component {
                 if (userType === "admin") window.location.href = '/';
                 else if (userType === "reviewer") window.location.href = '/reviewerDashboard';
                 else if (userType === "editor") window.location.href = '/';
-                else if (userType === "attendee") window.location.href = '/';
+                else if (userType === "attendee") window.location.href = '/attendee';
                 else if (userType === "workshop conductor") window.location.href = '/workshopPresenter';
                 else if (userType === "resercher") window.location.href = '/resercher';
                 else window.location.href = '/';
@@ -27946,39 +28289,61 @@ class Login extends _react.Component {
             console.log("userType", userType);
         }).catch((error)=>{
             console.log(error.message);
-            alert(error.message);
+        // alert(error.message);
         });
     }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container  w-25 p-3",
-            style: {
-                backgroundColor: '#ebe6e6',
-                marginTop: '60px'
-            },
+            className: "loginContainer",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
                 lineNumber: 67
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "loginImage",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
                 lineNumber: 68
             },
             __self: this
-        }, " Login "), /*#__PURE__*/ _reactDefault.default.createElement("form", {
-            onSubmit: this.onSubmit,
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "",
+            id: "loginWrapper",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
                 lineNumber: 69
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "mb-3",
+            className: "loginForm",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
                 lineNumber: 70
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            style: {
+                textAlign: "center"
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
+                lineNumber: 71
+            },
+            __self: this
+        }, " Login "), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+            className: "row g-3",
+            onSubmit: this.onSubmit,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
+                lineNumber: 72
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mb-3",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
+                lineNumber: 73
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -27986,7 +28351,7 @@ class Login extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
-                lineNumber: 71
+                lineNumber: 74
             },
             __self: this
         }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -27999,14 +28364,14 @@ class Login extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
-                lineNumber: 72
+                lineNumber: 75
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mb-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
-                lineNumber: 82
+                lineNumber: 85
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -28014,7 +28379,7 @@ class Login extends _react.Component {
             className: "form-label",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
-                lineNumber: 83
+                lineNumber: 86
             },
             __self: this
         }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -28027,18 +28392,21 @@ class Login extends _react.Component {
             required: true,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
-                lineNumber: 84
+                lineNumber: 87
             },
             __self: this
         })), /*#__PURE__*/ _reactDefault.default.createElement("button", {
             type: "submit",
-            className: "btn btn-primary",
+            className: "btn btn-lg text-white",
+            style: {
+                backgroundColor: "#585c61"
+            },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Login\\Login.jsx",
-                lineNumber: 94
+                lineNumber: 97
             },
             __self: this
-        }, "Login"))));
+        }, "Login"))))));
     }
 }
 exports.default = Login;
@@ -28048,7 +28416,7 @@ exports.default = Login;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","react-router-dom":"1PMSK"}],"3T2oN":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","./login.css":"7uDPa"}],"7uDPa":[function() {},{}],"3T2oN":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28061,8 +28429,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _paymentForm = require("../PaymentForm/PaymentForm");
-var _paymentFormDefault = parcelHelpers.interopDefault(_paymentForm);
+var _workshopCss = require("./workshop.css");
+var _bootstrapIconsCss = require("bootstrap-icons/font/bootstrap-icons.css");
 class WorkshopPresenter extends _react.Component {
     constructor(props){
         super(props);
@@ -28100,222 +28468,214 @@ class WorkshopPresenter extends _react.Component {
     }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-50 p-3 text-center",
-            style: {
-                marginTop: '60px'
-            },
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 49
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            className: "wcContainer",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 50
             },
             __self: this
-        }, "User Home"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-100 p-3 text-center",
-            style: {
-                backgroundColor: '#ebe6e6',
-                marginTop: '60px'
-            },
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 51
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+        }, "User Home"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "wcImg",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 52
             },
             __self: this
-        }, "User Details"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "wcWrapper",
+            style: {
+                backgroundColor: '#ebe6e6'
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
+                lineNumber: 54
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+            style: {
+                textAlign: "center"
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
+                lineNumber: 55
+            },
+            __self: this
+        }, " User Details"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container w-75 p-3",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
+                lineNumber: 56
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mt-1 mb-1",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 53
+                lineNumber: 57
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             htmlFor: "name",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 53
+                lineNumber: 57
             },
             __self: this
         }, "Name: ", this.state.user.name, " ")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mt-1 mb-1",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 54
+                lineNumber: 58
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             htmlFor: "eail",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 54
+                lineNumber: 58
             },
             __self: this
         }, "Email: ", this.state.user.email, " "), " "), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mt-1 mb-1",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 55
+                lineNumber: 59
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             htmlFor: "phone",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 55
-            },
-            __self: this
-        }, "Phone: ", this.state.user.phone, " "), " ")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-100 p-3 text-center",
-            style: {
-                backgroundColor: '#ebe6e6',
-                marginTop: '60px'
-            },
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 58
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 59
             },
             __self: this
-        }, "Uploaded Workshop Proposal"), /*#__PURE__*/ _reactDefault.default.createElement("table", {
-            className: "table",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 60
+        }, "Phone: ", this.state.user.phone, " "), " ")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container w-100 p-3 ",
+            style: {
+                backgroundColor: '#ebe6e6'
             },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 61
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 62
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
-            id: "file",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 63
             },
             __self: this
-        }, "file"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
-            id: "uploadDate",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+            style: {
+                textAlign: "center"
+            },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 64
             },
             __self: this
-        }, "Upload Date"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
-            id: "approve",
+        }, "Uploaded Workshop Proposal Details"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container w-75 p-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 65
             },
             __self: this
-        }, "Approval Status"))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mt-1 mb-1",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
+                lineNumber: 66
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "file",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
+                lineNumber: 66
+            },
+            __self: this
+        }, "File: ", /*#__PURE__*/ _reactDefault.default.createElement("i", {
+            class: "bi bi-file-earmark-pdf",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
+                lineNumber: 66
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+            href: `http://localhost:8070/${this.state.workshop.filePath}`,
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
+                lineNumber: 66
+            },
+            __self: this
+        }, this.state.workshop.title), " ")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mt-1 mb-1",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
+                lineNumber: 67
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "update",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
+                lineNumber: 67
+            },
+            __self: this
+        }, "Upload Date: ", this.state.workshop.uploadDate, " "), " "), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "mt-1 mb-1",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 68
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+            htmlFor: "status",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 69
+                lineNumber: 68
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "row",
-            id: "trfile",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 70
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-            href: `http://localhost:8070/${this.state.workshop.filePath}`,
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 71
-            },
-            __self: this
-        }, this.state.workshop.title)), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            id: "trUploadDate",
+        }, "Approval Status: ", this.state.workshop.approval, " "), " "))), this.state.workshop.approval === "approved" ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 73
             },
             __self: this
-        }, this.state.workshop.uploadDate), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            id: "trUploadDate",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container w-100 p-3 text-center",
+            style: {
+                backgroundColor: '#72ed7b'
+            },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
                 lineNumber: 74
             },
             __self: this
-        }, this.state.workshop.approval))))), this.state.workshop.approval === "approved" ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 81
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-100 p-3 text-center",
-            style: {
-                backgroundColor: '#72ed7b',
-                marginTop: '60px'
-            },
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 82
-            },
-            __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 83
+                lineNumber: 75
             },
             __self: this
         }, "congratulations Your Workshop Proposal Has Been Approved"))) : this.state.workshop.approval === "rejected" ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "container w-100 p-3 text-center",
             style: {
-                backgroundColor: '#ed4c57',
-                marginTop: '60px'
+                backgroundColor: '#ed4c57'
             },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 87
+                lineNumber: 79
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\WorkshopPresenter.jsx",
-                lineNumber: 88
+                lineNumber: 80
             },
             __self: this
-        }, "Your Workshop Proposal has been Rejected")) : null));
+        }, "Your Workshop Proposal has been Rejected")) : null)));
     }
 }
 exports.default = WorkshopPresenter;
@@ -28325,7 +28685,7 @@ exports.default = WorkshopPresenter;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","../PaymentForm/PaymentForm":"SPKOV"}],"5vDPx":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","./workshop.css":"3WE1O","bootstrap-icons/font/bootstrap-icons.css":"56BW9","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3WE1O":[function() {},{}],"56BW9":[function() {},{}],"5vDPx":[function(require,module,exports) {
 var helpers = require("../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28373,6 +28733,7 @@ class NavBar extends _react.Component {
     }
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "navbarWrapper",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 47
@@ -28383,7 +28744,8 @@ class NavBar extends _react.Component {
             style: {
                 position: 'fixed',
                 width: '100%',
-                top: '0'
+                top: '0',
+                zIndex: 1
             },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -28450,7 +28812,7 @@ class NavBar extends _react.Component {
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
             "aria-current": "page",
-            to: "/",
+            to: "/admin2Home",
             activeclassname: "active",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -28466,14 +28828,14 @@ class NavBar extends _react.Component {
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
-            to: "/",
+            to: "/approveall",
             activeclassname: "active",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 61
             },
             __self: this
-        }, "Downloads")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "Approve Conferences")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             className: "nav-item",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -28522,14 +28884,14 @@ class NavBar extends _react.Component {
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
             "aria-current": "page",
-            to: "/",
+            to: "/adminHome",
             activeclassname: "active",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 73
             },
             __self: this
-        }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "Welcome to Editor Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             className: "nav-item",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -28538,14 +28900,14 @@ class NavBar extends _react.Component {
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
-            to: "/",
+            to: "/createConference",
             activeclassname: "active",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 76
             },
             __self: this
-        }, "Downloads")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "Add Conference")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             className: "nav-item",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -28554,14 +28916,14 @@ class NavBar extends _react.Component {
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
             className: "nav-link",
-            to: "/",
-            activeclassname: "active",
+            to: "/Conferences",
+            activeclassname: "conferences",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
                 lineNumber: 79
             },
             __self: this
-        }, "Researchers")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        }, "conferences")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
             className: "nav-item",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\NavBar.jsx",
@@ -29220,6 +29582,7 @@ var _paymentForm = require("../PaymentForm/PaymentForm");
 var _paymentFormDefault = parcelHelpers.interopDefault(_paymentForm);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _paymentCss = require("./payment.css");
 class Attendee extends _react.Component {
     constructor(props){
         super(props);
@@ -29266,96 +29629,130 @@ class Attendee extends _react.Component {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 56
+                lineNumber: 57
             },
             __self: this
-        }, !this.state.hasPaid ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-100 p-3 text-center",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 58
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-25 p-3 text-center",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 59
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement(_paymentFormDefault.default, {
-            amount: this.state.registrationFee,
-            userType: this.state.userType,
-            updatePaymentStatus: this.updatePaymentStatus,
+        }, !this.state.hasPaid ? // <div className="container w-100 p-3 text-center">
+        /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "paymentContainer",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
                 lineNumber: 60
             },
             __self: this
-        }))) : /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-50 p-3 text-center",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "paymentImage",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
+                lineNumber: 61
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "paymentWrapper",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
+                lineNumber: 62
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            style: {
+                textAlign: "center"
+            },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
                 lineNumber: 63
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-100 p-3 text-center",
-            style: {
-                backgroundColor: '#ebe6e6',
-                marginTop: '60px'
-            },
+        }, "Payment"), /*#__PURE__*/ _reactDefault.default.createElement(_paymentFormDefault.default, {
+            amount: this.state.registrationFee,
+            userType: this.state.userType,
+            updatePaymentStatus: this.updatePaymentStatus,
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
                 lineNumber: 64
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+        }))) : /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "",
+            id: "attendeeWrapper",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 65
+                lineNumber: 67
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "attendeeImg",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
+                lineNumber: 68
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "attendeeContentWrapper",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
+                lineNumber: 69
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container w-100 p-3",
+            style: {
+                backgroundColor: '#ebe6e6'
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
+                lineNumber: 70
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+            style: {
+                textAlign: "center"
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
+                lineNumber: 71
             },
             __self: this
         }, "User Details"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mt-1 mb-1",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 66
+                lineNumber: 72
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             htmlFor: "name",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 66
+                lineNumber: 72
             },
             __self: this
         }, "Name: ", this.state.user.name, " ")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mt-1 mb-1",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 67
+                lineNumber: 73
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             htmlFor: "eail",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 67
+                lineNumber: 73
             },
             __self: this
         }, "Email: ", this.state.user.email, " "), " "), /*#__PURE__*/ _reactDefault.default.createElement("div", {
             className: "mt-1 mb-1",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 68
+                lineNumber: 74
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
             htmlFor: "phone",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 68
+                lineNumber: 74
             },
             __self: this
         }, "Phone: ", this.state.user.phone, " "), " ")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
@@ -29366,16 +29763,16 @@ class Attendee extends _react.Component {
             },
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 71
+                lineNumber: 77
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\User\\Attendee.jsx",
-                lineNumber: 72
+                lineNumber: 78
             },
             __self: this
-        }, "You have succcesfully completed the payment and registered as an attendee")))));
+        }, "You have succcesfully completed the payment and registered as an attendee"))))));
     }
 }
 exports.default = Attendee;
@@ -29385,7 +29782,7 @@ exports.default = Attendee;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","../PaymentForm/PaymentForm":"SPKOV","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65"}],"674iF":[function(require,module,exports) {
+},{"react":"3b2NM","../PaymentForm/PaymentForm":"SPKOV","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","./payment.css":"2w9YR"}],"2w9YR":[function() {},{}],"674iF":[function(require,module,exports) {
 var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29398,6 +29795,8 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _uploadsCss = require("./uploads.css");
+var _bootstrapIconsCss = require("bootstrap-icons/font/bootstrap-icons.css");
 class Papers extends _react.Component {
     constructor(){
         super();
@@ -29428,7 +29827,7 @@ class Papers extends _react.Component {
             id: id,
             approval: approval
         };
-        _axiosDefault.default.put('http://localhost:8070/workshopUpload/updateApproval', paper).then((response)=>{
+        _axiosDefault.default.put('http://localhost:8070/paperUpload/updateApproval', paper).then((response)=>{
             this.setState({
                 message: response.message
             });
@@ -29439,46 +29838,50 @@ class Papers extends _react.Component {
     };
     render() {
         return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-75 p-3 text-center",
-            style: {
-                backgroundColor: '#ebe6e6',
-                marginTop: '60px'
-            },
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 54
-            },
-            __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 55
-            },
-            __self: this
-        }, "Pending Papers"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-            className: "container w-75 p-3 ",
+            className: "uploadBackground",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
                 lineNumber: 56
             },
             __self: this
-        }, this.state.uploads.length != 0 ? /*#__PURE__*/ _reactDefault.default.createElement("table", {
-            className: "table",
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container w-75 p-3 text-center",
+            id: "uploads",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
+                lineNumber: 57
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
                 lineNumber: 58
             },
             __self: this
-        }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+        }, "Pending Papers"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container w-75 p-3",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
                 lineNumber: 59
             },
             __self: this
+        }, this.state.uploads.length != 0 ? /*#__PURE__*/ _reactDefault.default.createElement("table", {
+            className: "table table-dark table-striped table-hover",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
+                lineNumber: 61
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
+                lineNumber: 62
+            },
+            __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 60
+                lineNumber: 63
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -29486,31 +29889,31 @@ class Papers extends _react.Component {
             id: "file",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 61
+                lineNumber: 64
             },
             __self: this
         }, "file"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
             scope: "col",
-            id: "user",
-            __source: {
-                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 62
-            },
-            __self: this
-        }, "User"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-            scope: "col",
             id: "name",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 63
+                lineNumber: 65
             },
             __self: this
         }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
             scope: "col",
+            id: "email",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
+                lineNumber: 66
+            },
+            __self: this
+        }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+            scope: "col",
             id: "uploadDate",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 64
+                lineNumber: 67
             },
             __self: this
         }, "Upload Date"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -29518,7 +29921,7 @@ class Papers extends _react.Component {
             id: "approve",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 65
+                lineNumber: 68
             },
             __self: this
         }, "Approve"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -29526,13 +29929,13 @@ class Papers extends _react.Component {
             id: "reject",
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 66
+                lineNumber: 69
             },
             __self: this
         }, "Reject"))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 69
+                lineNumber: 72
             },
             __self: this
         }, this.state.uploads.map((paper)=>{
@@ -29540,7 +29943,7 @@ class Papers extends _react.Component {
                 key: paper._id,
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                    lineNumber: 72
+                    lineNumber: 75
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
@@ -29548,42 +29951,52 @@ class Papers extends _react.Component {
                 id: "trfile",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                    lineNumber: 73
-                },
-                __self: this
-            }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-                href: `http://localhost:8070/${paper.filePath}`,
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                    lineNumber: 74
-                },
-                __self: this
-            }, paper.title)), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-                id: "trSize",
-                __source: {
-                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
                     lineNumber: 76
                 },
                 __self: this
-            }, paper.fileSize), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-                id: "trName",
+            }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
+                class: "bi bi-file-earmark-pdf",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
                     lineNumber: 77
                 },
                 __self: this
-            }, paper.user.name), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-                id: "trUploadDate",
+            }), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+                href: `http://localhost:8070/${paper.filePath}`,
+                style: {
+                    color: "white"
+                },
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
                     lineNumber: 78
+                },
+                __self: this
+            }, paper.title)), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                id: "trName",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
+                    lineNumber: 80
+                },
+                __self: this
+            }, paper.user.name), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                id: "trEmail",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
+                    lineNumber: 81
+                },
+                __self: this
+            }, paper.user.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                id: "trUploadDate",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
+                    lineNumber: 82
                 },
                 __self: this
             }, paper.uploadDate), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 id: "trApprove",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                    lineNumber: 79
+                    lineNumber: 83
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -29594,14 +30007,14 @@ class Papers extends _react.Component {
                 ,
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                    lineNumber: 79
+                    lineNumber: 83
                 },
                 __self: this
             }, "Approve")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
                 id: "trRreject",
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                    lineNumber: 80
+                    lineNumber: 84
                 },
                 __self: this
             }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
@@ -29612,17 +30025,17 @@ class Papers extends _react.Component {
                 ,
                 __source: {
                     fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                    lineNumber: 80
+                    lineNumber: 84
                 },
                 __self: this
             }, "Reject"))));
         }))) : /*#__PURE__*/ _reactDefault.default.createElement("div", {
             __source: {
                 fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Reviewer\\Papers.jsx",
-                lineNumber: 87
+                lineNumber: 91
             },
             __self: this
-        }))));
+        })))));
     }
 }
 exports.default = Papers;
@@ -29632,6 +30045,2674 @@ exports.default = Papers;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}]},["1j6wU","1GBDS","53dE8"], "53dE8", "parcelRequire0de8")
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./uploads.css":"28J5v","bootstrap-icons/font/bootstrap-icons.css":"56BW9"}],"28J5v":[function() {},{}],"56BW9":[function() {},{}],"775o9":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _conferenceCss = require("./conference.css");
+var _s = $RefreshSig$();
+function AddConference() {
+    _s();
+    const [confName, setconfName] = _react.useState("");
+    const [year, setyear] = _react.useState("");
+    const [startingDate, setstartingDate] = _react.useState("");
+    const [endDate, setendDate] = _react.useState("");
+    const [description, setdescription] = _react.useState("");
+    const [venue, setvenue] = _react.useState("");
+    const [RegistrationOpen, setRegistrationOpen] = _react.useState("");
+    const [RegistrationClosed, setRegistrationClosed] = _react.useState("");
+    const [paperSubmitionOpen, setpaperSubmitionOpen] = _react.useState("");
+    const [paperSubmitionClose, setpaperSubmitionClose] = _react.useState("");
+    const [workshopSubmitionOpen, setworkshopSubmitionOpen] = _react.useState("");
+    const [workshopSubmitionClose, setworkshopSubmitionClose] = _react.useState("");
+    const [status, setstatus] = _react.useState("pending");
+    //function to set data
+    async function sentData(e) {
+        e.preventDefault();
+        const newConference = {
+            confName,
+            startingDate,
+            year,
+            endDate,
+            description,
+            venue,
+            RegistrationOpen,
+            RegistrationClosed,
+            paperSubmitionOpen,
+            paperSubmitionClose,
+            workshopSubmitionOpen,
+            workshopSubmitionClose,
+            status
+        };
+        // axios.post("http://localhost:8070/conferenceApi/create",newConference).then(()=>{
+        //     alert("conference added")
+        //   }).catch(error => {
+        //     console.log(error.message);
+        //     alert(error.message);
+        //   })}
+        try {
+            let result = await _axiosDefault.default.post('http://localhost:8070/conferenceApi/create', newConference);
+            alert('Conference Added');
+        } catch (err) {
+            console.log(err);
+            console.log(err.response.data);
+        }
+    }
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "bodyt",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 67
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "formCreate",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 68
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "container",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 70
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("form", {
+        onSubmit: sentData,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 72
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 73
+        },
+        __self: this
+    }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 73
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement("center", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 74
+        },
+        __self: this
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 74
+        },
+        __self: this
+    }, "ADD CONFERENCE DETAILS")), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 76
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "name",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 78
+        },
+        __self: this
+    }, "Conference Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-control",
+        id: "name",
+        placeholder: "Enter conference Name",
+        onChange: (e)=>{
+            setconfName(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 79
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 83
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 84
+        },
+        __self: this
+    }, "Year"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter year",
+        onChange: (e)=>{
+            setyear(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 85
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 90
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 91
+        },
+        __self: this
+    }, "Description"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Description",
+        onChange: (e)=>{
+            setdescription(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 92
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 97
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 98
+        },
+        __self: this
+    }, "Venue"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Description",
+        onChange: (e)=>{
+            setvenue(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 99
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 104
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 105
+        },
+        __self: this
+    }, "Startig date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Startig date",
+        onChange: (e)=>{
+            setstartingDate(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 106
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 110
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 111
+        },
+        __self: this
+    }, "End date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter End Date",
+        onChange: (e)=>{
+            setendDate(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 112
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 116
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 117
+        },
+        __self: this
+    }, "Registration open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Registration open date",
+        onChange: (e)=>{
+            setRegistrationOpen(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 118
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 122
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 123
+        },
+        __self: this
+    }, "Registration close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Registration close date",
+        onChange: (e)=>{
+            setRegistrationClosed(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 124
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 129
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 130
+        },
+        __self: this
+    }, "Paper submition open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Paper submition open date",
+        onChange: (e)=>{
+            setpaperSubmitionOpen(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 131
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 135
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 136
+        },
+        __self: this
+    }, "Paper submition close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        onChange: (e)=>{
+            setpaperSubmitionClose(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 137
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 142
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 143
+        },
+        __self: this
+    }, "work shop submition open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        onChange: (e)=>{
+            setworkshopSubmitionOpen(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 144
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 148
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 149
+        },
+        __self: this
+    }, "work shop submition close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        onChange: (e)=>{
+            setworkshopSubmitionClose(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 150
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 155
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "hidden",
+        class: "form-control",
+        value: "pending",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        onChange: (e)=>{
+            setstatus(e.target.value);
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 157
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 164
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+        type: "submit",
+        class: "btnprimary",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 165
+        },
+        __self: this
+    }, "Submit")), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\createConference.js",
+            lineNumber: 168
+        },
+        __self: this
+    })))));
+}
+exports.default = AddConference;
+_s(AddConference, "FxzS4zhwzbPcvbkvF0Qkk1ulbzk=");
+_c = AddConference;
+var _c;
+$RefreshReg$(_c, "AddConference");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","./conference.css":"301Ln","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"301Ln":[function() {},{}],"4IDgW":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRouterDom = require("react-router-dom");
+var _conferenceCss = require("./conference.css");
+class Conferences extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            conferences: []
+        };
+    }
+    componentDidMount() {
+        _axiosDefault.default.get('http://localhost:8070/conferenceAPi/').then((response)=>{
+            this.setState({
+                conferences: response.data.data
+            });
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "bodyt",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                lineNumber: 25
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                lineNumber: 28
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                lineNumber: 29
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                lineNumber: 29
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            style: {
+                color: "white"
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                lineNumber: 30
+            },
+            __self: this
+        }, "Conferences"), /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+            style: {
+                color: "white"
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                lineNumber: 31
+            },
+            __self: this
+        }, "confirmation will recive within two days. You can update your details after submition within submission date"), this.state.conferences.length > 0 && this.state.conferences.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+                key: index,
+                className: "card mb-3",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 33
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                className: "p-3",
+                onClick: (e)=>this.navigateSubjectPage(e, item._id)
+                ,
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 34
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("table", {
+                id: "customers",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 36
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 38
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 39
+                },
+                __self: this
+            }, "Conference Name :"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 40
+                },
+                __self: this
+            }, item.confName)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 43
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 44
+                },
+                __self: this
+            }, "Year :"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 45
+                },
+                __self: this
+            }, item.year)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 48
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 49
+                },
+                __self: this
+            }, "Descriprion:"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 50
+                },
+                __self: this
+            }, item.description)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 53
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 54
+                },
+                __self: this
+            }, "startingDate"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 55
+                },
+                __self: this
+            }, item.startingDate)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 58
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 59
+                },
+                __self: this
+            }, "endDate:"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 60
+                },
+                __self: this
+            }, " ", item.endDate)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 63
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 64
+                },
+                __self: this
+            }, "venue"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 65
+                },
+                __self: this
+            }, item.venue)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 68
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 69
+                },
+                __self: this
+            }, "RegistrationOpen: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 70
+                },
+                __self: this
+            }, item.RegistrationOpen)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 73
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 74
+                },
+                __self: this
+            }, "RegistrationClosed: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 75
+                },
+                __self: this
+            }, item.RegistrationClosed)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 78
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 79
+                },
+                __self: this
+            }, "paperSubmitionOpen:"), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 80
+                },
+                __self: this
+            }, item.paperSubmitionOpen)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 83
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 84
+                },
+                __self: this
+            }, "workshopSubmitionOpen: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 85
+                },
+                __self: this
+            }, item.workshopSubmitionOpen)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 88
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 89
+                },
+                __self: this
+            }, "workshopSubmitionClose: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 90
+                },
+                __self: this
+            }, item.workshopSubmitionClose)), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 93
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 94
+                },
+                __self: this
+            }, "status: "), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                style: {
+                    color: "red"
+                },
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 95
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 95
+                },
+                __self: this
+            }, item.status))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 98
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 99
+                },
+                __self: this
+            }), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 100
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                className: "row mt-2",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 100
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+                id: "button2",
+                className: "col btn btn-danger ps-4 pe-4",
+                style: {
+                    color: "balck",
+                    border: "none",
+                    margin: "2px",
+                    width: "100px",
+                    background: "#rgba(58, 9, 148, 0.953)"
+                },
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 101
+                },
+                __self: this
+            }, " ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+                to: "/editConference/" + item._id,
+                style: {
+                    color: "black",
+                    width: "100px"
+                },
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 101
+                },
+                __self: this
+            }, "Edit")), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+                id: "button2",
+                className: "col btn btn-danger ps-4 pe-4",
+                style: {
+                    color: "black",
+                    border: "none",
+                    margin: "2px",
+                    width: "100px",
+                    background: "#rgba(58, 9, 148, 0.953)"
+                },
+                onClick: ()=>{
+                    deleteItem(item._id);
+                },
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\conferences.js",
+                    lineNumber: 103
+                },
+                __self: this
+            }, "Delete")))))))
+        ))));
+    }
+}
+let deleteItem = (id)=>{
+    _axiosDefault.default.delete('http://localhost:8070/conferenceAPi/delete/' + id).then((response)=>{
+        console.log(response.data);
+        alert("Conference details deleted ");
+    }).catch((e)=>{
+        console.log(e);
+    });
+};
+let updateItem = (id)=>{
+    _axiosDefault.default.delete('http://localhost:8070/conferenceAPi/delete/' + id).then((response)=>{
+        console.log(response.data);
+    }).catch((e)=>{
+        console.log(e);
+    });
+};
+exports.default = Conferences;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","react-router-dom":"1PMSK","./conference.css":"301Ln","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"301Ln":[function() {},{}],"2ffx6":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _s = $RefreshSig$();
+let EditSingle = (props)=>{
+    _s();
+    const intialState = {
+        'confName': '',
+        'startingDate': '',
+        'year': '',
+        'endDate': '',
+        'description': '',
+        'venue': '',
+        'RegistrationOpen': '',
+        'RegistrationClosed': '',
+        'paperSubmitionOpen': '',
+        'paperSubmitionClose': '',
+        'workshopSubmitionOpen': '',
+        'workshopSubmitionClose': '',
+        'status': ''
+    };
+    const [gotData, setTrue] = _react.useState(false);
+    const [item, setItem] = _react.useState(intialState);
+    _react.useEffect(()=>{
+        _axiosDefault.default.get('http://localhost:8070/conferenceAPi/findbyId/' + props.match.params.id).then((res)=>{
+            setItem(res.data);
+            setTrue(true);
+        }).catch((e)=>{
+            console.log(e);
+        });
+    }, [
+        props.match.params.id
+    ]);
+    const handleName = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.confName = e.target.value;
+        setItem(newItem);
+    };
+    const handleYear = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.year = e.target.value;
+        setItem(newItem);
+    };
+    const handleStarignDate = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.startingDate = e.target.value;
+        setItem(newItem);
+    };
+    const handleEndDate = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.endDate = e.target.value;
+        setItem(newItem);
+    };
+    const handleRegOpen = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.RegistrationOpen = e.target.value;
+        setItem(newItem);
+    };
+    const handleRegClose = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.RegistrationClosed = e.target.value;
+        setItem(newItem);
+    };
+    const handleDescription = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.description = e.target.value;
+        setItem(newItem);
+    };
+    const handleVenue = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.venue = e.target.value;
+        setItem(newItem);
+    };
+    const handlePaperOpen = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.paperSubmitionOpen = e.target.value;
+        setItem(newItem);
+    };
+    const handlePaperClose = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.paperSubmitionClose = e.target.value;
+        setItem(newItem);
+    };
+    const handleWorkShopOpen = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.workshopSubmitionOpen = e.target.value;
+        setItem(newItem);
+    };
+    const handleWorkShopClose = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.workshopSubmitionClose = e.target.value;
+        setItem(newItem);
+    };
+    const handleStatus = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.status = e.target.value;
+        setItem(newItem);
+    };
+    const updateIetm = ()=>{
+        let data = {
+            'confName': item.confName,
+            'startingDate': item.startingDate,
+            'year': item.year,
+            'endDate': item.endDate,
+            'description': item.description,
+            'venue': item.venue,
+            'RegistrationOpen': item.RegistrationOpen,
+            'RegistrationClosed': item.RegistrationClosed,
+            'paperSubmitionOpen': item.paperSubmitionOpen,
+            'paperSubmitionClose': item.paperSubmitionClose,
+            'workshopSubmitionOpen': item.workshopSubmitionOpen,
+            'workshopSubmitionClose': item.workshopSubmitionOpen,
+            'status': item.status
+        };
+        _axiosDefault.default.put('http://localhost:8070/conferenceAPi/update/' + props.match.params.id, data).then(function(response) {
+            console.log(response.data);
+            alert('Student successfully updated');
+        }).catch(function(er) {
+            console.log(er);
+        });
+        console.log(data);
+        console.log(props.match.params.id);
+    };
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "bodyt",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 171
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "formCreate",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 172
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 173
+        },
+        __self: undefined
+    }, gotData ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "container",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 179
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-wrapper",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 181
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("form", {
+        onSubmit: updateIetm,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 183
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 185
+        },
+        __self: undefined
+    }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 185
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("center", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 186
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 186
+        },
+        __self: undefined
+    }, "Edit CONFERENCE DETAILS")), /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "name",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 188
+        },
+        __self: undefined
+    }, "Conference Name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-control",
+        id: "name",
+        value: item.confName,
+        placeholder: "Enter conference Name",
+        onChange: handleName,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 189
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 193
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 194
+        },
+        __self: undefined
+    }, "Year"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-control",
+        id: "description",
+        value: item.year,
+        placeholder: "Enter year",
+        onChange: handleYear,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 195
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 199
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 200
+        },
+        __self: undefined
+    }, "Description"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Description",
+        value: item.description,
+        onChange: handleDescription,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 201
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 205
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 206
+        },
+        __self: undefined
+    }, "Venue"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Description",
+        value: item.venue,
+        onChange: handleVenue,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 207
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 211
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 212
+        },
+        __self: undefined
+    }, "Startig date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Startig date",
+        value: item.startingDate,
+        onChange: handleStarignDate,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 213
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 216
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 217
+        },
+        __self: undefined
+    }, "End date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter End Date",
+        value: item.endDate,
+        onChange: handleEndDate,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 218
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 221
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 222
+        },
+        __self: undefined
+    }, "Registration open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Registration open date",
+        value: item.RegistrationOpen,
+        onChange: handleRegOpen,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 223
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 226
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 227
+        },
+        __self: undefined
+    }, "Registration close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Registration close date",
+        value: item.RegistrationClosed,
+        onChange: handleRegClose,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 228
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 232
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 233
+        },
+        __self: undefined
+    }, "Paper submition open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Paper submition open date",
+        value: item.paperSubmitionOpen,
+        onChange: handlePaperOpen,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 234
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 237
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 238
+        },
+        __self: undefined
+    }, "Paper submition close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        value: item.paperSubmitionClose,
+        onChange: handlePaperClose,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 239
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 243
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 244
+        },
+        __self: undefined
+    }, "work shop submition open date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        value: item.workshopSubmitionOpen,
+        onChange: handleWorkShopOpen,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 245
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 248
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 249
+        },
+        __self: undefined
+    }, "work shop submition close date"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "date",
+        class: "form-control",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        value: item.workshopSubmitionClose,
+        onChange: handleWorkShopClose,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 250
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "form-group",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 254
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "hidden",
+        class: "form-control",
+        value: "pending",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        value: item.status,
+        onChange: handleStatus,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 256
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 262
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+        type: "submit",
+        class: "btnprimary",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 263
+        },
+        __self: undefined
+    }, "Update"), " "))) : /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\Conference\\editSingle.js",
+            lineNumber: 270
+        },
+        __self: undefined
+    })))));
+};
+_s(EditSingle, "JXHH0MPDIgpTiL4FhArWUct5Ctw=");
+_c = EditSingle;
+exports.default = EditSingle;
+var _c;
+$RefreshReg$(_c, "EditSingle");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1UZk6":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactRouterDom = require("react-router-dom");
+class Conferences extends _react.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            conferences: []
+        };
+    }
+    componentDidMount() {
+        _axiosDefault.default.get('http://localhost:8070/conferenceAPi/').then((response)=>{
+            this.setState({
+                conferences: response.data.data
+            });
+        });
+    }
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "bodyt",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                lineNumber: 24
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                lineNumber: 25
+            },
+            __self: this
+        }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                lineNumber: 25
+            },
+            __self: this
+        }), " ", /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                lineNumber: 25
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "container",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                lineNumber: 26
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            style: {
+                color: "white"
+            },
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                lineNumber: 27
+            },
+            __self: this
+        }, "Conferences"), this.state.conferences.length > 0 && this.state.conferences.map((item, index)=>/*#__PURE__*/ _reactDefault.default.createElement("div", {
+                key: index,
+                className: "card mb-3",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 29
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                className: "p-3",
+                onClick: (e)=>this.navigateSubjectPage(e, item._id)
+                ,
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 30
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("h4", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 31
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("b", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 31
+                },
+                __self: this
+            }, "Conference Name: ", item.confName)), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 32
+                },
+                __self: this
+            }, "Year: ", item.year), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 33
+                },
+                __self: this
+            }, "Descriprion: ", item.description), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 34
+                },
+                __self: this
+            }, "startingDate: ", item.startingDate), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 35
+                },
+                __self: this
+            }, "endDate: ", item.endDate), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 36
+                },
+                __self: this
+            }, "venue: ", item.venue), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 37
+                },
+                __self: this
+            }, "RegistrationOpen: ", item.RegistrationOpen), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 38
+                },
+                __self: this
+            }, "RegistrationClosed: ", item.RegistrationClosed), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 39
+                },
+                __self: this
+            }, "paperSubmitionOpen: ", item.paperSubmitionOpen), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 40
+                },
+                __self: this
+            }, "workshopSubmitionOpen: ", item.workshopSubmitionOpen), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 41
+                },
+                __self: this
+            }, "workshopSubmitionClose: ", item.workshopSubmitionClose), /*#__PURE__*/ _reactDefault.default.createElement("h5", {
+                style: {
+                    color: "red"
+                },
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 42
+                },
+                __self: this
+            }, "status: ", item.status)), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+                className: "row mt-2",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 47
+                },
+                __self: this
+            }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
+                id: "button2",
+                className: "col btn btn-danger ps-4 pe-4",
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 48
+                },
+                __self: this
+            }, " ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+                to: "/approvesingle/" + item._id,
+                className: "col btn ps-4 pe-4",
+                style: {
+                    color: "white"
+                },
+                __source: {
+                    fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\approveALL.js",
+                    lineNumber: 48
+                },
+                __self: this
+            }, "Approve"))))
+        ))));
+    }
+}
+exports.default = Conferences;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3y0fy":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _approveCss = require("./approve.css");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _s = $RefreshSig$();
+let EditSingle = (props)=>{
+    _s();
+    const intialState = {
+        'confName': '',
+        'startingDate': '',
+        'year': '',
+        'endDate': '',
+        'description': '',
+        'venue': '',
+        'RegistrationOpen': '',
+        'RegistrationClosed': '',
+        'paperSubmitionOpen': '',
+        'paperSubmitionClose': '',
+        'workshopSubmitionOpen': '',
+        'workshopSubmitionClose': '',
+        'status': ''
+    };
+    const [gotData, setTrue] = _react.useState(false);
+    const [item, setItem] = _react.useState(intialState);
+    _react.useEffect(()=>{
+        _axiosDefault.default.get('http://localhost:8070/conferenceAPi/findbyId/' + props.match.params.id).then((res)=>{
+            setItem(res.data);
+            setTrue(true);
+        }).catch((e)=>{
+            console.log(e);
+        });
+    }, [
+        props.match.params.id
+    ]);
+    const handleName = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.confName = e.target.value;
+        setItem(newItem);
+    };
+    const handleYear = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.year = e.target.value;
+        setItem(newItem);
+    };
+    const handleStarignDate = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.startingDate = e.target.value;
+        setItem(newItem);
+    };
+    const handleEndDate = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.endDate = e.target.value;
+        setItem(newItem);
+    };
+    const handleRegOpen = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.RegistrationOpen = e.target.value;
+        setItem(newItem);
+    };
+    const handleRegClose = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.RegistrationClosed = e.target.value;
+        setItem(newItem);
+    };
+    const handleDescription = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.description = e.target.value;
+        setItem(newItem);
+    };
+    const handleVenue = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.venue = e.target.value;
+        setItem(newItem);
+    };
+    const handlePaperOpen = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.paperSubmitionOpen = e.target.value;
+        setItem(newItem);
+    };
+    const handlePaperClose = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.paperSubmitionClose = e.target.value;
+        setItem(newItem);
+    };
+    const handleWorkShopOpen = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.workshopSubmitionOpen = e.target.value;
+        setItem(newItem);
+    };
+    const handleWorkShopClose = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.workshopSubmitionClose = e.target.value;
+        setItem(newItem);
+    };
+    const handleStatus = (e)=>{
+        let newItem = {
+            ...item
+        };
+        newItem.status = e.target.value;
+        setItem(newItem);
+    };
+    const updateIetm = ()=>{
+        let data = {
+            'confName': item.confName,
+            'startingDate': item.startingDate,
+            'year': item.year,
+            'endDate': item.endDate,
+            'description': item.description,
+            'venue': item.venue,
+            'RegistrationOpen': item.RegistrationOpen,
+            'RegistrationClosed': item.RegistrationClosed,
+            'paperSubmitionOpen': item.paperSubmitionOpen,
+            'paperSubmitionClose': item.paperSubmitionClose,
+            'workshopSubmitionOpen': item.workshopSubmitionOpen,
+            'workshopSubmitionClose': item.workshopSubmitionOpen,
+            'status': item.status
+        };
+        _axiosDefault.default.put('http://localhost:8070/conferenceAPi/update/' + props.match.params.id, data).then(function(response) {
+            console.log(response.data);
+            alert('Student successfully updated');
+        }).catch(function(er) {
+            console.log(er);
+        });
+        console.log(data);
+        console.log(props.match.params.id);
+    };
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        class: "bodyl",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 171
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 174
+        },
+        __self: undefined
+    }, gotData ? /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "container",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 183
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 184
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 184
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 184
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("form", {
+        onSubmit: updateIetm,
+        class: "bodyf",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 187
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        style: {
+            color: "black"
+        },
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 188
+        },
+        __self: undefined
+    }, "APPROVE CONFERENCE DETAILS"), /*#__PURE__*/ _reactDefault.default.createElement("table", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 190
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 192
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 193
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 193
+        },
+        __self: undefined
+    }, "Conference Name")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 194
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "name",
+        value: item.confName,
+        placeholder: "Enter conference Name",
+        onChange: handleName,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 194
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 198
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 199
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 199
+        },
+        __self: undefined
+    }, "Year")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 200
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        value: item.year,
+        placeholder: "Enter year",
+        onChange: handleYear,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 200
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 205
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 206
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 206
+        },
+        __self: undefined
+    }, "Description")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 207
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Description",
+        value: item.description,
+        onChange: handleDescription,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 207
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 211
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 212
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 212
+        },
+        __self: undefined
+    }, "Venue")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 213
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Description",
+        value: item.venue,
+        onChange: handleVenue,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 213
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 218
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 219
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 219
+        },
+        __self: undefined
+    }, "Startig date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 220
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Startig date",
+        value: item.startingDate,
+        onChange: handleStarignDate,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 220
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 225
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 226
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 226
+        },
+        __self: undefined
+    }, "End date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 227
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter End Date",
+        value: item.endDate,
+        onChange: handleEndDate,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 227
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 232
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 233
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 233
+        },
+        __self: undefined
+    }, "Registration open date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 234
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Registration open date",
+        value: item.RegistrationOpen,
+        onChange: handleRegOpen,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 234
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 239
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 240
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 240
+        },
+        __self: undefined
+    }, "Registration close date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 241
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Registration close date",
+        value: item.RegistrationClosed,
+        onChange: handleRegClose,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 241
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 246
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 247
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 247
+        },
+        __self: undefined
+    }, "Paper submition open date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 248
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Paper submition open date",
+        value: item.paperSubmitionOpen,
+        onChange: handlePaperOpen,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 248
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 253
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 254
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 254
+        },
+        __self: undefined
+    }, "Paper submition open date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 255
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Paper submition open date",
+        value: item.paperSubmitionOpen,
+        onChange: handlePaperOpen,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 255
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 260
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 261
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 261
+        },
+        __self: undefined
+    }, "Paper submition close date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 262
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        value: item.paperSubmitionClose,
+        onChange: handlePaperClose,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 262
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 267
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 268
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 268
+        },
+        __self: undefined
+    }, "work shop submition open date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 269
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        value: item.workshopSubmitionOpen,
+        onChange: handleWorkShopOpen,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 269
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 274
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 275
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 275
+        },
+        __self: undefined
+    }, "work shop submition close date")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 276
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-controlc",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        value: item.workshopSubmitionClose,
+        onChange: handleWorkShopClose,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 276
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 281
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 282
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("label", {
+        for: "descrition",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 282
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 282
+        },
+        __self: undefined
+    }, "Status"))), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 283
+        },
+        __self: undefined
+    }, " ", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "text",
+        class: "form-control",
+        value: "pending",
+        id: "description",
+        placeholder: "Enter Paper submition close date",
+        value: item.status,
+        onChange: handleStatus,
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 283
+        },
+        __self: undefined
+    }), " ", /*#__PURE__*/ _reactDefault.default.createElement("button", {
+        type: "submit",
+        class: "imary",
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 285
+        },
+        __self: undefined
+    }, "Submit status")))), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 289
+        },
+        __self: undefined
+    }))) : /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminApprove\\aprroveSingle.js",
+            lineNumber: 297
+        },
+        __self: undefined
+    }))));
+};
+_s(EditSingle, "JXHH0MPDIgpTiL4FhArWUct5Ctw=");
+_c = EditSingle;
+exports.default = EditSingle;
+var _c;
+$RefreshReg$(_c, "EditSingle");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","./approve.css":"qS7iM","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"qS7iM":[function() {},{}],"7KVrI":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// import Background from 'url:../public/images/BackgroundHomeImage.png';
+var _homeCss = require("./home.css");
+class AdminHome extends _react.Component {
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "admin-body",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 8
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "backgroundImage",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 9
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 10
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 11
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 12
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 12
+            },
+            __self: this
+        }, "Add Conference")), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, "conferences")), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 14
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome\\home.js",
+                lineNumber: 14
+            },
+            __self: this
+        }, "Workshops"))))));
+    }
+}
+exports.default = AdminHome;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","./home.css":"1YjCw","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1YjCw":[function() {},{}],"1PfpK":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+// import Background from 'url:../public/images/BackgroundHomeImage.png';
+var _reactRouterDom = require("react-router-dom");
+var _homeCss = require("./home.css");
+class AdminHome extends _react.Component {
+    render() {
+        return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+            className: "admin-body",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 9
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "backgroundImage",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 10
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+            class: "",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 11
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 12
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("br", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 12
+            },
+            __self: this
+        }), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+            style: {
+                color: "white"
+            },
+            className: "nav-link",
+            to: "/approveall",
+            activeclassname: "active",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 13
+            },
+            __self: this
+        }, "Approve Conferences"))), /*#__PURE__*/ _reactDefault.default.createElement("button", {
+            type: "button",
+            class: "block",
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 15
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+            __source: {
+                fileName: "D:\\Projetcs\\AF Project\\AF-Project\\frontend\\components\\AdminHome2\\home.js",
+                lineNumber: 15
+            },
+            __self: this
+        }, "conferences"))))));
+    }
+}
+exports.default = AdminHome;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-router-dom":"1PMSK","./home.css":"1Vb2Q","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1Vb2Q":[function() {},{}]},["1j6wU","1GBDS","53dE8"], "53dE8", "parcelRequire0de8")
 
 //# sourceMappingURL=index.8792c6b3.js.map

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+// import './payment.css'
 
 const initialState ={
     firstName: '',
@@ -40,7 +41,6 @@ class PaymentForm extends Component {
             } 
         })
         .then(response=>{
-            alert('Payment is succesfull');
             this.props.updatePaymentStatus();
          })
         .catch(error=>{
@@ -59,82 +59,86 @@ class PaymentForm extends Component {
     
     render() {
         return (
-            <div className="container  p-3" style={{backgroundColor: '#ebe6e6', marginTop: '60px'}} >
-                <form class="row g-3" onSubmit={this.onSubmit}>
-                    <div class="col-12">
-                        <label for="amount" class="form-label">Amount</label>
-                        <input 
-                            type="number" 
-                            class="form-control" 
-                            id="amount" 
-                            name="amount" 
-                            value = {this.props.amount}
-                            disabled
-                        />
-                    </div>
-                        <div class="col-md-6">
-                            <label for="firstName" class="form-label">First Name</label>
-                            <input 
-                                type="text" 
-                                class="form-control" 
-                                id="firstName" 
-                                name="firstName" 
-                                value={this.state.firstName}
-                                onChange={this.onChange}
-                                required
-                            />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="lastName" class="form-label">Last Name</label>
-                            <input 
-                                type="text" 
-                                class="form-control" 
-                                id="lastName" 
-                                name="lastName"
-                                value={this.state.lastName}
-                                onChange={this.onChange} 
-                                required
-                            />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="cardNumber" class="form-label">Credit Card Number</label>
-                            <input 
-                                type="text" 
-                                class="form-control" 
-                                id="cardNumber" 
-                                name="cardNumber" 
-                                value={this.state.cardNumber}
-                                onChange={this.onChange}
-                                required
-                            />
-                        </div>
-                        <div class="col-md-6">
-                            <label for="cvc" class="form-label">Security Code</label>
+            <div >
+                {/* <div className="paymentImage"></div> */}
+                <div >
+                
+                    <form class="row g-3 text-start" onSubmit={this.onSubmit}>
+                        <div className="col-md-12">
+                            <label for="amount" class="form-label">Amount</label>
                             <input 
                                 type="number" 
                                 class="form-control" 
-                                id="cvc" 
-                                placeholder="CVC" 
-                                name="cvc"
-                                value={this.state.cvc}
-                                onChange={this.onChange} 
-                                required
+                                id="amount" 
+                                name="amount" 
+                                value = {this.props.amount}
+                                disabled
                             />
                         </div>
-                        <div class="col-md-6">
-                            <label for="cardExp" class="form-label">Card Expiration Date</label>
-                            <input 
-                                type="date" 
-                                class="form-control" 
-                                id="cardExp" 
-                                name="cardExpDate"
-                                value={this.state.cardExpDate}
-                                onChange={this.onChange} 
-                                required
-                            />
-                        </div>
-                        <button type="submit" className="btn btn-primary">Submit</button>
-                    </form>
+                            <div class="col-md-6">
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="firstName" 
+                                    name="firstName" 
+                                    value={this.state.firstName}
+                                    onChange={this.onChange}
+                                    required
+                                />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="lastName" 
+                                    name="lastName"
+                                    value={this.state.lastName}
+                                    onChange={this.onChange} 
+                                    required
+                                />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cardNumber" class="form-label">Credit Card Number</label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="cardNumber" 
+                                    name="cardNumber" 
+                                    value={this.state.cardNumber}
+                                    onChange={this.onChange}
+                                    required
+                                />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cvc" class="form-label">Security Code</label>
+                                <input 
+                                    type="number" 
+                                    class="form-control" 
+                                    id="cvc" 
+                                    placeholder="CVC" 
+                                    name="cvc"
+                                    value={this.state.cvc}
+                                    onChange={this.onChange} 
+                                    required
+                                />
+                            </div>
+                            <div class="col-md-6">
+                                <label for="cardExp" class="form-label">Card Expiration Date</label>
+                                <input 
+                                    type="date" 
+                                    class="form-control" 
+                                    id="cardExp" 
+                                    name="cardExpDate"
+                                    value={this.state.cardExpDate}
+                                    onChange={this.onChange} 
+                                    required
+                                />
+                            </div>
+                            <button type="submit" className="btn btn-lg text-white" style={{backgroundColor:"#585c61"}}>Submit</button>
+                        </form>
+                </div>
             </div>
         );
     }

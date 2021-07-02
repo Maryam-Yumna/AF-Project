@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axois from 'axios';
-import PaymentForm from '../PaymentForm/PaymentForm';
+import './register.css';
 
 const initialState ={
     name: '',
@@ -58,7 +58,6 @@ class Register extends Component {
 
         axois.post('http://localhost:8070/user/register', User)
         .then(response=>{
-            alert('Data Successfully inserted');
             localStorage.setItem('token', response.data.token);
             if(this.state.type=== "resercher"){
                 return axois.post('http://localhost:8070/paperUpload/newPaperUpload', formData, {
@@ -75,17 +74,15 @@ class Register extends Component {
                 })
             }
             else{
-                this.props.history.push("/attendee");
+                window.location.href = '/attendee'
             }
         })
         .then(response=>{
             if(this.state.type=== "resercher"){
-                alert('Your Paper has been submitted');
-                this.props.history.push("/resercher");
+                window.location.href = '/resercher'
             }
             else if(this.state.type === "workshop conductor"){
-                alert('Your workshop proposal has been submitted');
-                this.props.history.push("/workshopPresenter");
+                window.location.href = '/workshopPresenter'
             }
             else{
                 this.props.history.push("/attendee");
@@ -98,151 +95,154 @@ class Register extends Component {
     }
     render() {
         return (
-            <div className="container w-25 p-3" style={{backgroundColor: '#ebe6e6', marginTop: '60px'}}>
-                <h1> Register</h1>
-                <form onSubmit={this.onSubmit}>
-                    <div className="mb-3">
-                        <label htmlFor="name" className="form-label">Name</label>
-                        <input 
-                            type="text" 
-                            className="form-control" 
-                            vale={this.state.name} 
-                            name ="name" 
-                            id="name"
-                            onChange={this.onChange}
-                            required
-                        />
-                    </div>
-                    <div className="mb-3">
-                        <label htmlFor="username" className="form-label">Username</label>
-                        <input 
-                            type="text" 
-                            className="form-control" 
-                            vale={this.state.username} 
-                            name ="username" 
-                            id="username"
-                            onChange={this.onChange}
-                            required
-                        />
-                    </div>
-                    <div className="mb-3">
-                        <label htmlFor="password" className="form-label">Password</label>
-                        <input 
-                            type="password" 
-                            className="form-control" 
-                            vale={this.state.password} 
-                            name ="password" 
-                            id="password"
-                            onChange={this.onChange}
-                            required
-                        />
-                    </div>
-                    <div className="mb-3">
-                        <label htmlFor="email" className="form-label">Email</label>
-                        <input 
-                            type="email" 
-                            className="form-control" 
-                            vale={this.state.email} 
-                            name ="email" 
-                            id="email"
-                            onChange={this.onChange}
-                            required
-                        />
-                    </div>
-                    <div className="mb-3">
-                        <label htmlFor="phone" className="form-label">Phone</label>
-                        <input 
-                            type="number" 
-                            className="form-control" 
-                            value={this.state.phone}
-                            name="phone" 
-                            id="phone"
-                            onChange={this.onChange}
-                            required
-                        />
-                    </div>
-                    <div className="mb-3">
-                        <label htmlFor="type" className="form-label">User Type</label>
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="type" id="resercher" value="resercher" onChange={this.onChange}/>
-                                <label className="form-check-label" htmlFor="resercher">
-                                    Researcher
-                                </label>
-                            </div>
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="type" id="workshopConductor" value="workshop conductor" onChange={this.onChange}/>
-                                <label className="form-check-label" htmlFor="workshopConductor">
-                                    Workshop Condutor
-                                </label>
-                            </div>
-                            <div className="form-check">
-                                <input className="form-check-input" type="radio" name="type" id="attendee" value="attendee"  onChange={this.onChange}/>
-                                <label className="form-check-label" htmlFor="attendee">
-                                    Attendee
-                                </label>
-                            </div>
-                    </div>
-                    {this.state.type ==="resercher" ? 
+            <div className="registernContainer">
+                <div className="registerImage"></div>
+                <div className="registerWrapper">
+                    <h1> Register</h1>
+                    <form className="row g-3" onSubmit={this.onSubmit}>
+                        <div className="colmb-3">
+                            <label htmlFor="name" className="form-label">Name</label>
+                            <input 
+                                type="text" 
+                                className="form-control" 
+                                vale={this.state.name} 
+                                name ="name" 
+                                id="name"
+                                onChange={this.onChange}
+                                required
+                            />
+                        </div>
+                        <div className="col-md-6">
+                            <label htmlFor="username" className="form-label">Username</label>
+                            <input 
+                                type="text" 
+                                className="form-control" 
+                                vale={this.state.username} 
+                                name ="username" 
+                                id="username"
+                                onChange={this.onChange}
+                                required
+                            />
+                        </div>
+                        <div className="col-md-6">
+                            <label htmlFor="password" className="form-label">Password</label>
+                            <input 
+                                type="password" 
+                                className="form-control" 
+                                vale={this.state.password} 
+                                name ="password" 
+                                id="password"
+                                onChange={this.onChange}
+                                required
+                            />
+                        </div>
+                        <div className="col-md-6">
+                            <label htmlFor="email" className="form-label">Email</label>
+                            <input 
+                                type="email" 
+                                className="form-control" 
+                                vale={this.state.email} 
+                                name ="email" 
+                                id="email"
+                                onChange={this.onChange}
+                                required
+                            />
+                        </div>
+                        <div className="col-md-6">
+                            <label htmlFor="phone" className="form-label">Phone</label>
+                            <input 
+                                type="number" 
+                                className="form-control" 
+                                value={this.state.phone}
+                                name="phone" 
+                                id="phone"
+                                onChange={this.onChange}
+                                required
+                            />
+                        </div>
                         <div className="mb-3">
-                            <div className="mb-3">
-                                <label htmlFor="title" className="form-label">Reserch Paper Title</label>
-                                <input 
-                                    type="text" 
-                                    className="form-control" 
-                                    vale={this.state.title} 
-                                    name ="title" 
-                                    id="title"
-                                    onChange={this.onChange}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="uploadReserchPaper" className="form-label">Upload Reserch Paper</label>
-                                <input 
-                                    className="form-control" 
-                                    type="file" 
-                                    id="uploadReserchPaper"
-                                    onChange={this.onFileChange}
-                                     required
-                                />
-                            </div>
-                        </div>:
-                        this.state.type ==="workshop conductor" ? 
-                        <div>
-                            <div className="mb-3">
-                                <label htmlFor="title" className="form-label">Workshop Title</label>
-                                <input 
-                                    type="text" 
-                                    className="form-control" 
-                                    vale={this.state.title} 
-                                    name ="title" 
-                                    id="title"
-                                    onChange={this.onChange}
-                                    required
-                                />
-                            </div>
-                            <div className="mb-3">
-                                <label htmlFor="uploadWorkshopProposal" className="form-label">Upload Workshop Proposal</label>
-                                <input 
-                                    className="form-control" 
-                                    type="file" 
-                                    id="uploadWorkshopProposal"
-                                    onChange={this.onFileChange}
-                                    required
-                                />
-                            </div>
+                            <label htmlFor="type" className="form-label">User Type</label>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="type" id="resercher" value="resercher" onChange={this.onChange}/>
+                                    <label className="form-check-label" htmlFor="resercher">
+                                        Researcher
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="type" id="workshopConductor" value="workshop conductor" onChange={this.onChange}/>
+                                    <label className="form-check-label" htmlFor="workshopConductor">
+                                        Workshop Condutor
+                                    </label>
+                                </div>
+                                <div className="form-check">
+                                    <input className="form-check-input" type="radio" name="type" id="attendee" value="attendee"  onChange={this.onChange}/>
+                                    <label className="form-check-label" htmlFor="attendee">
+                                        Attendee
+                                    </label>
+                                </div>
                         </div>
-                        :
-                        this.state.type==="attendee"?
-                        <div>
-                        </div>
-                        :null}
-                    {
-                        this.state.type === "resercher" || this.state.type === "workshop conductor" ?
-                            <button type="submit" className="btn btn-primary">Register</button>
-                        : <button type="submit" className="btn btn-primary">Pay Now </button>
-                    }
-                </form>
+                        {this.state.type ==="resercher" ? 
+                            <div className="mb-3">
+                                <div className="mb-3">
+                                    <label htmlFor="title" className="form-label">Reserch Paper Title</label>
+                                    <input 
+                                        type="text" 
+                                        className="form-control" 
+                                        vale={this.state.title} 
+                                        name ="title" 
+                                        id="title"
+                                        onChange={this.onChange}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="uploadReserchPaper" className="form-label">Upload Reserch Paper</label>
+                                    <input 
+                                        className="form-control" 
+                                        type="file" 
+                                        id="uploadReserchPaper"
+                                        onChange={this.onFileChange}
+                                        required
+                                    />
+                                </div>
+                            </div>:
+                            this.state.type ==="workshop conductor" ? 
+                            <div>
+                                <div className="mb-3">
+                                    <label htmlFor="title" className="form-label">Workshop Title</label>
+                                    <input 
+                                        type="text" 
+                                        className="form-control" 
+                                        vale={this.state.title} 
+                                        name ="title" 
+                                        id="title"
+                                        onChange={this.onChange}
+                                        required
+                                    />
+                                </div>
+                                <div className="mb-3">
+                                    <label htmlFor="uploadWorkshopProposal" className="form-label">Upload Workshop Proposal</label>
+                                    <input 
+                                        className="form-control" 
+                                        type="file" 
+                                        id="uploadWorkshopProposal"
+                                        onChange={this.onFileChange}
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            :
+                            this.state.type==="attendee"?
+                            <div>
+                            </div>
+                            :null}
+                        {
+                            this.state.type === "resercher" || this.state.type === "workshop conductor" || this.state.type==="" ? 
+                                <button type="submit" className="btn btn-lg text-white" style={{backgroundColor:"#585c61"}}>Register</button>
+                            : <button type="submit" className="btn btn-lg text-white" style={{backgroundColor:"#585c61"}}>Pay Now </button>
+                        }
+                    </form>
+                </div>
             </div>
         );
     }
