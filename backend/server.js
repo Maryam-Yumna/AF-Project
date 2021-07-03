@@ -40,12 +40,14 @@ app.use('/conference', conferenceRouter);
 
 app.use('/workshop', workshopRouter);
 
+// http://localhost:8070/keynoteSpeaker
 const keynoteSpeakerRouter = require('./routes/keynoteSpeakers.js');
 app.use('/keynoteSpeaker', keynoteSpeakerRouter);
 
 const workshopUploadRouter = require('./routes/workshopUploads.js');
 app.use('/workshopUpload', workshopUploadRouter);
 
+// http://localhost:8070/keynoteSpeakerTemp
 const keynoteSpeakerTempRouter = require('./routes/keynoteSpeakersTemp.js');
 app.use('/keynoteSpeakerTemp', keynoteSpeakerTempRouter);
 

@@ -6,18 +6,21 @@ const keynoteSpeakerSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "Conference",
     },
-    year: {
-        type: Number,
-    },
-    name: {
+    keynoteName: {
         type: String,
+        required: true
     },
     organization: {
         type: String,
     },
     description: {
         type: String,
+        required: true
     },
+    status: {
+        type: String,
+        default : "Waiting"
+    }
 });
 
 const KeynoteSpeaker = mongoose.model("KeynoteSpeaker", keynoteSpeakerSchema);
